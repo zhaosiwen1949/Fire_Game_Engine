@@ -1,0 +1,13 @@
+package Serializer;
+option optimize_for = LITE_RUNTIME;
+
+message RuntimeAudioData
+{
+	optional string path=1;//audio original path
+	optional int32 format=2;//1 -> streaming mp3 format 2 -> pcm format
+	optional int32 frequence=3;
+	optional int32 byte_per_sample=4;
+	optional int32 channel_count=5;
+	optional int32 openal_format=6;
+	optional bytes data=7;
+}

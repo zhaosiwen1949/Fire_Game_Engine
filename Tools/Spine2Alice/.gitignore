@@ -1,0 +1,7 @@
+**/*.spine
+**/*.zip
+**/*.prefab
+**/*.texture
+**/*.avatar
+/.vs
+/Debug

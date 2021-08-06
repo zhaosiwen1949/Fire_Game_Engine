@@ -1,0 +1,28 @@
+package Serializer;
+option optimize_for = LITE_RUNTIME;
+//GLSL20
+message UniformDefine
+{
+	optional string name=1;
+	optional int32 type=2;
+}
+message AttributeDefine
+{
+	optional string name=1;
+	optional int32 stride=2;
+	optional int32 offset=3;
+	optional int32 data_type=4;
+	optional int32 normalized=5;
+	optional int32 component_count=6;
+}
+message GLSL
+{
+	optional string name=1;
+	optional string guid=2;
+	optional bytes vert_code=3;
+	optional bytes frag_code=4;
+	repeated AttributeDefine attributes=5;
+	repeated UniformDefine uniforms=6;
+	optional fixed64 lwtVS=7;//last write time for vertex shader
+	optional fixed64 lwtFS=8;//last write time for fragment shader
+}

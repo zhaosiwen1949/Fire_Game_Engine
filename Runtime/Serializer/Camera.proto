@@ -1,0 +1,18 @@
+package Serializer;
+option optimize_for = LITE_RUNTIME;
+import "Color.proto";
+
+message Camera{
+	optional int32 projection_mode=1;
+	optional int32 clear_mode=2;
+	optional float clip_near=3;
+	optional float clip_far=4;
+	optional float depth=5;
+	optional uint32 culling_mask=6;
+	optional float orth_mode_size=7;
+	optional float fov=8;
+	optional int32 render_to_depth=9;
+	optional int32 render_to_offscreen=10;
+	optional Color4B clear_color=11;
+	optional string skybox=12;
+}

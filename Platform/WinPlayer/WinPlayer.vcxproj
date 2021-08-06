@@ -1,0 +1,673 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{582998EA-E805-4737-9419-A139DACECEBE}</ProjectGuid>
+    <RootNamespace>WinPlayer</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>..\..;..\..\External\ProtoBuffer\LibProtoBufferLite;..\..\External\FreeType\include;..\..\External\Box2D;..\..\External\PhysX-3.4-3.4.2-bsd\PhysX_3.4\Include;..\..\External\PhysX-3.4-3.4.2-bsd\PxShared\include;..\..\External\ZXing\core\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PreprocessorDefinitions>ALICE_WIN_PLAYER;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>..\..\External\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Runtime\2D\Canvas.cpp" />
+    <ClCompile Include="..\..\Runtime\2D\ClipArea2D.cpp" />
+    <ClCompile Include="..\..\Runtime\2D\Component2D.cpp" />
+    <ClCompile Include="..\..\Runtime\2D\DisplayChar.cpp" />
+    <ClCompile Include="..\..\Runtime\2D\FullScreenQuad.cpp" />
+    <ClCompile Include="..\..\Runtime\2D\ImageSprite.cpp" />
+    <ClCompile Include="..\..\Runtime\2D\ImageSprite9.cpp" />
+    <ClCompile Include="..\..\Runtime\2D\Label.cpp" />
+    <ClCompile Include="..\..\Runtime\2D\Sprite2D.cpp" />
+    <ClCompile Include="..\..\Runtime\2D\Sprite2D9.cpp" />
+    <ClCompile Include="..\..\Runtime\3D\CustomComponent.cpp" />
+    <ClCompile Include="..\..\Runtime\3D\Mesh.cpp" />
+    <ClCompile Include="..\..\Runtime\3D\MeshRenderer.cpp" />
+    <ClCompile Include="..\..\Runtime\3D\Terrain.cpp" />
+    <ClCompile Include="..\..\Runtime\3D\TerrainTile.cpp" />
+    <ClCompile Include="..\..\Runtime\Allocator\DefaultAllocator.cpp" />
+    <ClCompile Include="..\..\Runtime\Allocator\tlsf\tlsf.c" />
+    <ClCompile Include="..\..\Runtime\Android\AndroidRuntime.cpp" />
+    <ClCompile Include="..\..\Runtime\Animation\Animation.cpp" />
+    <ClCompile Include="..\..\Runtime\Animation\Avatar.cpp" />
+    <ClCompile Include="..\..\Runtime\Animation\Baked3DAnimation.cpp" />
+    <ClCompile Include="..\..\Runtime\Animation\SpineAvatar.cpp" />
+    <ClCompile Include="..\..\Runtime\Animation\ColorAnimation.cpp" />
+    <ClCompile Include="..\..\Runtime\Animation\EventAnimation.cpp" />
+    <ClCompile Include="..\..\Runtime\Animation\RenderOrderAnimation.cpp" />
+    <ClCompile Include="..\..\Runtime\Animation\SpriteSequenceAnimation.cpp" />
+    <ClCompile Include="..\..\Runtime\Animation\TransformAnimation.cpp" />
+    <ClCompile Include="..\..\Runtime\Animation\TwoColorAnimation.cpp" />
+    <ClCompile Include="..\..\Runtime\Audio\AudioBuffer.cpp" />
+    <ClCompile Include="..\..\Runtime\Audio\AudioDebugger.cpp" />
+    <ClCompile Include="..\..\Runtime\Audio\AudioDevice.cpp" />
+    <ClCompile Include="..\..\Runtime\Audio\AudioListener.cpp" />
+    <ClCompile Include="..\..\Runtime\Audio\AudioSource.cpp" />
+    <ClCompile Include="..\..\Runtime\Base\AliceGUID.cpp" />
+    <ClCompile Include="..\..\Runtime\Base\Component.cpp" />
+    <ClCompile Include="..\..\Runtime\Base\Object.cpp" />
+    <ClCompile Include="..\..\Runtime\Base\ScriptObject.cpp" />
+    <ClCompile Include="..\..\Runtime\Base\Transform.cpp" />
+    <ClCompile Include="..\..\Runtime\Builtin\3D\SkyBox.cpp" />
+    <ClCompile Include="..\..\Runtime\Builtin\HardCodedShader.cpp" />
+    <ClCompile Include="..\..\Runtime\Debugger\Debugger.cpp" />
+    <ClCompile Include="..\..\Runtime\Debugger\Log.cpp" />
+    <ClCompile Include="..\..\Runtime\Device\Android.cpp" />
+    <ClCompile Include="..\..\Runtime\Device\iPhone.cpp" />
+    <ClCompile Include="..\..\Runtime\Device\Mac.cpp" />
+    <ClCompile Include="..\..\Runtime\Device\Win.cpp" />
+    <ClCompile Include="..\..\Runtime\Exported\2D\ExportedCanvas.cpp" />
+    <ClCompile Include="..\..\Runtime\Exported\2D\ExportedClipArea2D.cpp" />
+    <ClCompile Include="..\..\Runtime\Exported\2D\ExportedSprite2D.cpp" />
+    <ClCompile Include="..\..\Runtime\Exported\2D\ExportedSprite2D9.cpp" />
+    <ClCompile Include="..\..\Runtime\Exported\3D\ExportedAvatar.cpp" />
+    <ClCompile Include="..\..\Runtime\Exported\3D\ExportedMesh.cpp" />
+    <ClCompile Include="..\..\Runtime\Exported\3D\ExportedMeshRenderer.cpp" />
+    <ClCompile Include="..\..\Runtime\Exported\3D\ExportedTerrain.cpp" />
+    <ClCompile Include="..\..\Runtime\Exported\Component\ExportedAudioSource.cpp" />
+    <ClCompile Include="..\..\Runtime\Exported\Component\ExportedCustomComponent.cpp" />
+    <ClCompile Include="..\..\Runtime\Exported\Component\ExportedImageSprite.cpp" />
+    <ClCompile Include="..\..\Runtime\Exported\Component\ExportedImageSprite9.cpp" />
+    <ClCompile Include="..\..\Runtime\Exported\Component\ExportedLabel.cpp" />
+    <ClCompile Include="..\..\Runtime\Exported\ExportModules.cpp" />
+    <ClCompile Include="..\..\Runtime\Exported\Geometry\ExportedRay.cpp" />
+    <ClCompile Include="..\..\Runtime\Exported\Graphic\ExportedDynamicFont.cpp" />
+    <ClCompile Include="..\..\Runtime\Exported\Graphic\ExportedGraphic.cpp" />
+    <ClCompile Include="..\..\Runtime\Exported\IO\ExportedAliceResource.cpp" />
+    <ClCompile Include="..\..\Runtime\Exported\IO\ExportedAudioResource.cpp" />
+    <ClCompile Include="..\..\Runtime\Exported\IO\ExportedDir.cpp" />
+    <ClCompile Include="..\..\Runtime\Exported\IO\ExportedFile.cpp" />
+    <ClCompile Include="..\..\Runtime\Exported\IO\ExportedImageResource.cpp" />
+    <ClCompile Include="..\..\Runtime\Exported\LuaEngine\ExportedLuaEngine.cpp" />
+    <ClCompile Include="..\..\Runtime\Exported\Math\ExportedMatrix3x3.cpp" />
+    <ClCompile Include="..\..\Runtime\Exported\Math\ExportedMatrix4x4.cpp" />
+    <ClCompile Include="..\..\Runtime\Exported\NetWork\ExportedHttp.cpp" />
+    <ClCompile Include="..\..\Runtime\Exported\NetWork\ExportedSocket.cpp" />
+    <ClCompile Include="..\..\Runtime\Exported\NetWork\ExportedWWW.cpp" />
+    <ClCompile Include="..\..\Runtime\Exported\Physics\ExportedPhysics2DBox.cpp" />
+    <ClCompile Include="..\..\Runtime\Exported\Physics\ExportedPhysics2DChain.cpp" />
+    <ClCompile Include="..\..\Runtime\Exported\Physics\ExportedPhysics2DCircle.cpp" />
+    <ClCompile Include="..\..\Runtime\Exported\Physics\ExportedPhysics2DComponent.cpp" />
+    <ClCompile Include="..\..\Runtime\Exported\Physics\ExportedPhysics2DEdge.cpp" />
+    <ClCompile Include="..\..\Runtime\Exported\Physics\ExportedPhysics3DCapsule.cpp" />
+    <ClCompile Include="..\..\Runtime\Exported\Physics\ExportedPhysics3DComponent.cpp" />
+    <ClCompile Include="..\..\Runtime\Exported\Physics\ExportedPhysics3DConvexMesh.cpp" />
+    <ClCompile Include="..\..\Runtime\Exported\Physics\ExportedPhysics3DCube.cpp" />
+    <ClCompile Include="..\..\Runtime\Exported\Physics\ExportedPhysics3DHeightField.cpp" />
+    <ClCompile Include="..\..\Runtime\Exported\Physics\ExportedPhysics3DSphere.cpp" />
+    <ClCompile Include="..\..\Runtime\Exported\Physics\ExportedPhysics3DTriangleMesh.cpp" />
+    <ClCompile Include="..\..\Runtime\Exported\Render\ExportedCamera.cpp" />
+    <ClCompile Include="..\..\Runtime\Exported\Render\ExportedLighting.cpp" />
+    <ClCompile Include="..\..\Runtime\Exported\Render\ExportedMaterial.cpp" />
+    <ClCompile Include="..\..\Runtime\Exported\Render\ExportedRenderOrder.cpp" />
+    <ClCompile Include="..\..\Runtime\Exported\Render\ExportedRenderPass.cpp" />
+    <ClCompile Include="..\..\Runtime\Exported\Render\ExportedShader.cpp" />
+    <ClCompile Include="..\..\Runtime\Exported\Render\ExportedTexture2D.cpp" />
+    <ClCompile Include="..\..\Runtime\Exported\Render\ExportedTextureCube.cpp" />
+    <ClCompile Include="..\..\Runtime\Exported\Scene\ExportedGameObject.cpp" />
+    <ClCompile Include="..\..\Runtime\Exported\Scene\ExportedGameObjectPhysicsComponent.cpp" />
+    <ClCompile Include="..\..\Runtime\Exported\Scene\ExportedGameObjectRenderComponent.cpp" />
+    <ClCompile Include="..\..\Runtime\Exported\Scene\ExportedGameObjectSerializer.cpp" />
+    <ClCompile Include="..\..\Runtime\Exported\Scene\ExportedScene.cpp" />
+    <ClCompile Include="..\..\Runtime\Exported\System\ExportedAsyncCommand.cpp" />
+    <ClCompile Include="..\..\Runtime\Exported\System\ExportedDevice.cpp" />
+    <ClCompile Include="..\..\Runtime\Exported\Utils\ExportedBinaryBuffer.cpp" />
+    <ClCompile Include="..\..\Runtime\Exported\Utils\ExportedString.cpp" />
+    <ClCompile Include="..\..\Runtime\Exported\Utils\ExportedTimer.cpp" />
+    <ClCompile Include="..\..\Runtime\Font\CharInfo.cpp" />
+    <ClCompile Include="..\..\Runtime\Font\DynamicFont.cpp" />
+    <ClCompile Include="..\..\Runtime\Font\FontFace.cpp" />
+    <ClCompile Include="..\..\Runtime\Geometry\AABB.cpp" />
+    <ClCompile Include="..\..\Runtime\Geometry\Bezier.cpp" />
+    <ClCompile Include="..\..\Runtime\Geometry\CubicBezier.cpp" />
+    <ClCompile Include="..\..\Runtime\Geometry\Curve.cpp" />
+    <ClCompile Include="..\..\Runtime\Geometry\Intersection.cpp" />
+    <ClCompile Include="..\..\Runtime\Geometry\Ray.cpp" />
+    <ClCompile Include="..\..\Runtime\Geometry\Sphere.cpp" />
+    <ClCompile Include="..\..\Runtime\Graphics\DynamicTextureAtlas.cpp" />
+    <ClCompile Include="..\..\Runtime\Graphics\ImageUtils.cpp" />
+    <ClCompile Include="..\..\Runtime\Graphics\LuminaceImage.cpp" />
+    <ClCompile Include="..\..\Runtime\Graphics\QRCodeImage.cpp" />
+    <ClCompile Include="..\..\Runtime\Graphics\TextureRectangleNode.cpp" />
+    <ClCompile Include="..\..\Runtime\IO\AliceData.cpp" />
+    <ClCompile Include="..\..\Runtime\IO\AliceResource.cpp" />
+    <ClCompile Include="..\..\Runtime\IO\AndroidAssetReader.cpp" />
+    <ClCompile Include="..\..\Runtime\IO\AudioResource.cpp" />
+    <ClCompile Include="..\..\Runtime\IO\FileItem.cpp" />
+    <ClCompile Include="..\..\Runtime\IO\FileSystem.cpp" />
+    <ClCompile Include="..\..\Runtime\IO\FontResource.cpp" />
+    <ClCompile Include="..\..\Runtime\IO\ImageResource.cpp" />
+    <ClCompile Include="..\..\Runtime\IO\ResourceManager.cpp" />
+    <ClCompile Include="..\..\Runtime\IO\ShaderResource.cpp" />
+    <ClCompile Include="..\..\Runtime\IO\TextureResource.cpp" />
+    <ClCompile Include="..\..\Runtime\LuaEngine\LuaCallback.cpp" />
+    <ClCompile Include="..\..\Runtime\LuaEngine\LuaEngine.cpp" />
+    <ClCompile Include="..\..\Runtime\Math\AliceFloat.cpp" />
+    <ClCompile Include="..\..\Runtime\Math\AliceMatrix4x4.cpp" />
+    <ClCompile Include="..\..\Runtime\Math\Color.cpp" />
+    <ClCompile Include="..\..\Runtime\Math\ColorHSB.cpp" />
+    <ClCompile Include="..\..\Runtime\Math\Matrix3x3.cpp" />
+    <ClCompile Include="..\..\Runtime\Math\Quaternion.cpp" />
+    <ClCompile Include="..\..\Runtime\Math\Vector2.cpp" />
+    <ClCompile Include="..\..\Runtime\Math\Vector3.cpp" />
+    <ClCompile Include="..\..\Runtime\Math\Vector4.cpp" />
+    <ClCompile Include="..\..\Runtime\NetWork\HttpCurl.cpp" />
+    <ClCompile Include="..\..\Runtime\NetWork\HttpWorker.cpp" />
+    <ClCompile Include="..\..\Runtime\NetWork\Socket.cpp" />
+    <ClCompile Include="..\..\Runtime\NetWork\SocketUtils.cpp" />
+    <ClCompile Include="..\..\Runtime\NetWork\WWW.cpp" />
+    <ClCompile Include="..\..\Runtime\Physics\Physics2DBox.cpp" />
+    <ClCompile Include="..\..\Runtime\Physics\Physics2DChain.cpp" />
+    <ClCompile Include="..\..\Runtime\Physics\Physics2DCircle.cpp" />
+    <ClCompile Include="..\..\Runtime\Physics\Physics2DComponent.cpp" />
+    <ClCompile Include="..\..\Runtime\Physics\Physics2DEdge.cpp" />
+    <ClCompile Include="..\..\Runtime\Physics\Physics3DCapsule.cpp" />
+    <ClCompile Include="..\..\Runtime\Physics\Physics3DComponent.cpp" />
+    <ClCompile Include="..\..\Runtime\Physics\Physics3DConvexMesh.cpp" />
+    <ClCompile Include="..\..\Runtime\Physics\Physics3DCube.cpp" />
+    <ClCompile Include="..\..\Runtime\Physics\Physics3DHeightField.cpp" />
+    <ClCompile Include="..\..\Runtime\Physics\Physics3DSphere.cpp" />
+    <ClCompile Include="..\..\Runtime\Physics\Physics3DTriangleMesh.cpp" />
+    <ClCompile Include="..\..\Runtime\Physics\PhysicsComponent.cpp" />
+    <ClCompile Include="..\..\Runtime\Physics\PhysicsManager.cpp" />
+    <ClCompile Include="..\..\Runtime\Plugins\base64.cpp" />
+    <ClCompile Include="..\..\Runtime\Plugins\id3\frame.c" />
+    <ClCompile Include="..\..\Runtime\Plugins\id3\header.c" />
+    <ClCompile Include="..\..\Runtime\Plugins\id3\id3v2lib.c" />
+    <ClCompile Include="..\..\Runtime\Plugins\id3\types.c" />
+    <ClCompile Include="..\..\Runtime\Plugins\id3\utils.c" />
+    <ClCompile Include="..\..\Runtime\Plugins\json\fpconv.c" />
+    <ClCompile Include="..\..\Runtime\Plugins\json\Json.c" />
+    <ClCompile Include="..\..\Runtime\Plugins\json\lua_cjson.c" />
+    <ClCompile Include="..\..\Runtime\Plugins\json\strbuf.c" />
+    <ClCompile Include="..\..\Runtime\Plugins\lbase64.cpp" />
+    <ClCompile Include="..\..\Runtime\Plugins\libqrencode\bitstream.c" />
+    <ClCompile Include="..\..\Runtime\Plugins\libqrencode\decode.c" />
+    <ClCompile Include="..\..\Runtime\Plugins\libqrencode\identify.c" />
+    <ClCompile Include="..\..\Runtime\Plugins\libqrencode\mask.c" />
+    <ClCompile Include="..\..\Runtime\Plugins\libqrencode\qrencode.c" />
+    <ClCompile Include="..\..\Runtime\Plugins\libqrencode\qrinput.c" />
+    <ClCompile Include="..\..\Runtime\Plugins\libqrencode\qrspec.c" />
+    <ClCompile Include="..\..\Runtime\Plugins\libqrencode\quirc.c" />
+    <ClCompile Include="..\..\Runtime\Plugins\libqrencode\rscode.c" />
+    <ClCompile Include="..\..\Runtime\Plugins\libqrencode\split.c" />
+    <ClCompile Include="..\..\Runtime\Plugins\libqrencode\version_db.c" />
+    <ClCompile Include="..\..\Runtime\Plugins\md5\md5.c" />
+    <ClCompile Include="..\..\Runtime\Plugins\md5\md5lib.c" />
+    <ClCompile Include="..\..\Runtime\Plugins\xml\luaxml.c" />
+    <ClCompile Include="..\..\Runtime\Plugins\zip\lua_zip.c" />
+    <ClCompile Include="..\..\Runtime\Profiler\Profiler.cpp" />
+    <ClCompile Include="..\..\Runtime\Render\Attribute.cpp" />
+    <ClCompile Include="..\..\Runtime\Render\Camera.cpp" />
+    <ClCompile Include="..\..\Runtime\Render\DrawCall.cpp" />
+    <ClCompile Include="..\..\Runtime\Render\GL20\BufferObject.cpp" />
+    <ClCompile Include="..\..\Runtime\Render\GL20\EBO.cpp" />
+    <ClCompile Include="..\..\Runtime\Render\GL20\FBO.cpp" />
+    <ClCompile Include="..\..\Runtime\Render\GL20\GLSL.cpp" />
+    <ClCompile Include="..\..\Runtime\Render\GL20\RBO.cpp" />
+    <ClCompile Include="..\..\Runtime\Render\GL20\Texture2D.cpp" />
+    <ClCompile Include="..\..\Runtime\Render\GL20\TextureCube.cpp" />
+    <ClCompile Include="..\..\Runtime\Render\GL20\TextureUnit.cpp" />
+    <ClCompile Include="..\..\Runtime\Render\GL20\VBO.cpp" />
+    <ClCompile Include="..\..\Runtime\Render\IndexBuffer.cpp" />
+    <ClCompile Include="..\..\Runtime\Render\Light\Light.cpp" />
+    <ClCompile Include="..\..\Runtime\Render\Material.cpp" />
+    <ClCompile Include="..\..\Runtime\Render\MaterialProperty.cpp" />
+    <ClCompile Include="..\..\Runtime\Render\RenderMisc.cpp" />
+    <ClCompile Include="..\..\Runtime\Render\RenderOrder.cpp" />
+    <ClCompile Include="..\..\Runtime\Render\RenderPass.cpp" />
+    <ClCompile Include="..\..\Runtime\Render\RenderState.cpp" />
+    <ClCompile Include="..\..\Runtime\Render\Shader.cpp" />
+    <ClCompile Include="..\..\Runtime\Render\UniformUpdater.cpp" />
+    <ClCompile Include="..\..\Runtime\Render\VertexData.cpp" />
+    <ClCompile Include="..\..\Runtime\Scene\EventDispatcher.cpp" />
+    <ClCompile Include="..\..\Runtime\Scene\GameObject.cpp" />
+    <ClCompile Include="..\..\Runtime\Scene\GameObjectPhysicsComponent.cpp" />
+    <ClCompile Include="..\..\Runtime\Scene\GameObjectRenderComponent.cpp" />
+    <ClCompile Include="..\..\Runtime\Scene\GameObjectScriptComponent.cpp" />
+    <ClCompile Include="..\..\Runtime\Scene\RendererManager.cpp" />
+    <ClCompile Include="..\..\Runtime\Scene\SceneManager.cpp" />
+    <ClCompile Include="..\..\Runtime\Scene\TouchEvent.cpp" />
+    <ClCompile Include="..\..\Runtime\Serializer\Animation.serializer.cpp" />
+    <ClCompile Include="..\..\Runtime\Serializer\Assets.serializer.cpp" />
+    <ClCompile Include="..\..\Runtime\Serializer\Audio.serializer.cpp" />
+    <ClCompile Include="..\..\Runtime\Serializer\Avatar.serializer.cpp" />
+    <ClCompile Include="..\..\Runtime\Serializer\Camera.serializer.cpp" />
+    <ClCompile Include="..\..\Runtime\Serializer\Color.serializer.cpp" />
+    <ClCompile Include="..\..\Runtime\Serializer\GameObject.serializer.cpp" />
+    <ClCompile Include="..\..\Runtime\Serializer\GLSL.serializer.cpp" />
+    <ClCompile Include="..\..\Runtime\Serializer\ImageSprite.serializer.cpp" />
+    <ClCompile Include="..\..\Runtime\Serializer\Label.serializer.cpp" />
+    <ClCompile Include="..\..\Runtime\Serializer\Material.serializer.cpp" />
+    <ClCompile Include="..\..\Runtime\Serializer\Mesh.serializer.cpp" />
+    <ClCompile Include="..\..\Runtime\Serializer\Particle.serializer.cpp" />
+    <ClCompile Include="..\..\Runtime\Serializer\Physics.serializer.cpp" />
+    <ClCompile Include="..\..\Runtime\Serializer\TextureAtlas.serializer.cpp" />
+    <ClCompile Include="..\..\Runtime\Serializer\TextureInfo.serializer.cpp" />
+    <ClCompile Include="..\..\Runtime\Serializer\Vector.serializer.cpp" />
+    <ClCompile Include="..\..\Runtime\Serializer\WindowsPlayer.serializer.cpp" />
+    <ClCompile Include="..\..\Runtime\String\BinaryBuffer.cpp" />
+    <ClCompile Include="..\..\Runtime\String\FixedString.cpp" />
+    <ClCompile Include="..\..\Runtime\String\StringUtils.cpp" />
+    <ClCompile Include="..\..\Runtime\Thread\AliceThread.cpp" />
+    <ClCompile Include="..\..\Runtime\Thread\MainThreadScheduler.cpp" />
+    <ClCompile Include="..\..\Runtime\Thread\ScheduleUnit.cpp" />
+    <ClCompile Include="..\..\Runtime\Utils\SystemInfo.cpp" />
+    <ClCompile Include="..\..\Runtime\Utils\Timer.cpp" />
+    <ClCompile Include="..\..\Runtime\Utils\TreeViewNode.cpp" />
+    <ClCompile Include="..\..\Runtime\Utils\TTree.cpp" />
+    <ClCompile Include="..\Win32Common\BaseWindow.cpp" />
+    <ClCompile Include="..\Win32Common\Control\ButtonControl\ImageButton.cpp" />
+    <ClCompile Include="..\Win32Common\Control\Control.cpp" />
+    <ClCompile Include="..\Win32Common\Control\ImageControl\ImageControl.cpp" />
+    <ClCompile Include="..\Win32Common\Control\ImageControl\ScaledImage.cpp" />
+    <ClCompile Include="..\Win32Common\Control\ImageControl\SelectableImageControl.cpp" />
+    <ClCompile Include="..\Win32Common\Control\TextControl\StaticText.cpp" />
+    <ClCompile Include="..\Win32Common\DoubleBufferedWindow.cpp" />
+    <ClCompile Include="..\Win32Common\MainWindow.cpp" />
+    <ClCompile Include="..\Win32Common\RenderContext.cpp" />
+    <ClCompile Include="..\Win32Common\RenderWindow.cpp" />
+    <ClCompile Include="..\Win32Common\SplitLine.cpp" />
+    <ClCompile Include="..\Win32Common\Utils\FolderSelecter.cpp" />
+    <ClCompile Include="..\Win32Common\WindowEventDispatcher.cpp" />
+    <ClCompile Include="WinPlayerView.cpp" />
+    <ClCompile Include="WinPlayerMainWindow.cpp" />
+    <ClCompile Include="EntryProxy.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Runtime\2D\Canvas.h" />
+    <ClInclude Include="..\..\Runtime\2D\ClipArea2D.h" />
+    <ClInclude Include="..\..\Runtime\2D\Component2D.h" />
+    <ClInclude Include="..\..\Runtime\2D\DisplayChar.h" />
+    <ClInclude Include="..\..\Runtime\2D\FullScreenQuad.h" />
+    <ClInclude Include="..\..\Runtime\2D\ImageSprite.h" />
+    <ClInclude Include="..\..\Runtime\2D\ImageSprite9.h" />
+    <ClInclude Include="..\..\Runtime\2D\Label.h" />
+    <ClInclude Include="..\..\Runtime\2D\Sprite2D.h" />
+    <ClInclude Include="..\..\Runtime\2D\Sprite2D9.h" />
+    <ClInclude Include="..\..\Runtime\3D\CustomComponent.h" />
+    <ClInclude Include="..\..\Runtime\3D\Mesh.h" />
+    <ClInclude Include="..\..\Runtime\3D\MeshRenderer.h" />
+    <ClInclude Include="..\..\Runtime\3D\Terrain.h" />
+    <ClInclude Include="..\..\Runtime\3D\TerrainTile.h" />
+    <ClInclude Include="..\..\Runtime\Allocator\DefaultAllocator.h" />
+    <ClInclude Include="..\..\Runtime\Allocator\MemoryLabel.h" />
+    <ClInclude Include="..\..\Runtime\Allocator\tlsf\tlsf.h" />
+    <ClInclude Include="..\..\Runtime\Allocator\tlsf\tlsfbits.h" />
+    <ClInclude Include="..\..\Runtime\Android\AndroidRuntime.h" />
+    <ClInclude Include="..\..\Runtime\Animation\Animation.h" />
+    <ClInclude Include="..\..\Runtime\Animation\AnimationClipType.h" />
+    <ClInclude Include="..\..\Runtime\Animation\Avatar.h" />
+    <ClInclude Include="..\..\Runtime\Animation\Baked3DAnimation.h" />
+    <ClInclude Include="..\..\Runtime\Animation\SpineAvatar.h" />
+    <ClInclude Include="..\..\Runtime\Animation\ColorAnimation.h" />
+    <ClInclude Include="..\..\Runtime\Animation\EventAnimation.h" />
+    <ClInclude Include="..\..\Runtime\Animation\RenderOrderAnimation.h" />
+    <ClInclude Include="..\..\Runtime\Animation\SpriteSequenceAnimation.h" />
+    <ClInclude Include="..\..\Runtime\Animation\TransformAnimation.h" />
+    <ClInclude Include="..\..\Runtime\Animation\TwoColorAnimation.h" />
+    <ClInclude Include="..\..\Runtime\Audio\AudioBuffer.h" />
+    <ClInclude Include="..\..\Runtime\Audio\AudioDebugger.h" />
+    <ClInclude Include="..\..\Runtime\Audio\AudioDevice.h" />
+    <ClInclude Include="..\..\Runtime\Audio\AudioListener.h" />
+    <ClInclude Include="..\..\Runtime\Audio\AudioSource.h" />
+    <ClInclude Include="..\..\Runtime\Base\AliceGUID.h" />
+    <ClInclude Include="..\..\Runtime\Base\ClassID.h" />
+    <ClInclude Include="..\..\Runtime\Base\Component.h" />
+    <ClInclude Include="..\..\Runtime\Base\Object.h" />
+    <ClInclude Include="..\..\Runtime\Base\ScriptObject.h" />
+    <ClInclude Include="..\..\Runtime\Base\Transform.h" />
+    <ClInclude Include="..\..\Runtime\Builtin\3D\SkyBox.h" />
+    <ClInclude Include="..\..\Runtime\Builtin\HardCodedShader.h" />
+    <ClInclude Include="..\..\Runtime\Debugger\Debugger.h" />
+    <ClInclude Include="..\..\Runtime\Debugger\Log.h" />
+    <ClInclude Include="..\..\Runtime\Device\Android.h" />
+    <ClInclude Include="..\..\Runtime\Device\DeviceInfo.h" />
+    <ClInclude Include="..\..\Runtime\Device\iOSAPIBridge.h" />
+    <ClInclude Include="..\..\Runtime\Device\iPhone.h" />
+    <ClInclude Include="..\..\Runtime\Device\Mac.h" />
+    <ClInclude Include="..\..\Runtime\Device\Win.h" />
+    <ClInclude Include="..\..\Runtime\Exported\2D\ExportedCanvas.h" />
+    <ClInclude Include="..\..\Runtime\Exported\2D\ExportedClipArea2D.h" />
+    <ClInclude Include="..\..\Runtime\Exported\2D\ExportedSprite2D.h" />
+    <ClInclude Include="..\..\Runtime\Exported\2D\ExportedSprite2D9.h" />
+    <ClInclude Include="..\..\Runtime\Exported\3D\ExportedAvatar.h" />
+    <ClInclude Include="..\..\Runtime\Exported\3D\ExportedMesh.h" />
+    <ClInclude Include="..\..\Runtime\Exported\3D\ExportedMeshRenderer.h" />
+    <ClInclude Include="..\..\Runtime\Exported\3D\ExportedTerrain.h" />
+    <ClInclude Include="..\..\Runtime\Exported\Component\ExportedAudioSource.h" />
+    <ClInclude Include="..\..\Runtime\Exported\Component\ExportedCustomComponent.h" />
+    <ClInclude Include="..\..\Runtime\Exported\Component\ExportedImageSprite.h" />
+    <ClInclude Include="..\..\Runtime\Exported\Component\ExportedImageSprite9.h" />
+    <ClInclude Include="..\..\Runtime\Exported\Component\ExportedLabel.h" />
+    <ClInclude Include="..\..\Runtime\Exported\ExportModules.h" />
+    <ClInclude Include="..\..\Runtime\Exported\Geometry\ExportedRay.h" />
+    <ClInclude Include="..\..\Runtime\Exported\Graphic\ExportedDynamicFont.h" />
+    <ClInclude Include="..\..\Runtime\Exported\Graphic\ExportedGraphic.h" />
+    <ClInclude Include="..\..\Runtime\Exported\IO\ExportedAliceResource.h" />
+    <ClInclude Include="..\..\Runtime\Exported\IO\ExportedAudioResource.h" />
+    <ClInclude Include="..\..\Runtime\Exported\IO\ExportedDir.h" />
+    <ClInclude Include="..\..\Runtime\Exported\IO\ExportedFile.h" />
+    <ClInclude Include="..\..\Runtime\Exported\IO\ExportedImageResource.h" />
+    <ClInclude Include="..\..\Runtime\Exported\LuaEngine\ExportedLuaEngine.h" />
+    <ClInclude Include="..\..\Runtime\Exported\Math\ExportedMatrix3x3.h" />
+    <ClInclude Include="..\..\Runtime\Exported\Math\ExportedMatrix4x4.h" />
+    <ClInclude Include="..\..\Runtime\Exported\NetWork\ExportedHttp.h" />
+    <ClInclude Include="..\..\Runtime\Exported\NetWork\ExportedSocket.h" />
+    <ClInclude Include="..\..\Runtime\Exported\NetWork\ExportedWWW.h" />
+    <ClInclude Include="..\..\Runtime\Exported\Physics\ExportedPhysics2DBox.h" />
+    <ClInclude Include="..\..\Runtime\Exported\Physics\ExportedPhysics2DChain.h" />
+    <ClInclude Include="..\..\Runtime\Exported\Physics\ExportedPhysics2DCircle.h" />
+    <ClInclude Include="..\..\Runtime\Exported\Physics\ExportedPhysics2DComponent.h" />
+    <ClInclude Include="..\..\Runtime\Exported\Physics\ExportedPhysics2DEdge.h" />
+    <ClInclude Include="..\..\Runtime\Exported\Physics\ExportedPhysics3DCapsule.h" />
+    <ClInclude Include="..\..\Runtime\Exported\Physics\ExportedPhysics3DComponent.h" />
+    <ClInclude Include="..\..\Runtime\Exported\Physics\ExportedPhysics3DConvexMesh.h" />
+    <ClInclude Include="..\..\Runtime\Exported\Physics\ExportedPhysics3DCube.h" />
+    <ClInclude Include="..\..\Runtime\Exported\Physics\ExportedPhysics3DHeightField.h" />
+    <ClInclude Include="..\..\Runtime\Exported\Physics\ExportedPhysics3DSphere.h" />
+    <ClInclude Include="..\..\Runtime\Exported\Physics\ExportedPhysics3DTriangleMesh.h" />
+    <ClInclude Include="..\..\Runtime\Exported\Render\ExportedCamera.h" />
+    <ClInclude Include="..\..\Runtime\Exported\Render\ExportedLighting.h" />
+    <ClInclude Include="..\..\Runtime\Exported\Render\ExportedMaterial.h" />
+    <ClInclude Include="..\..\Runtime\Exported\Render\ExportedRenderOrder.h" />
+    <ClInclude Include="..\..\Runtime\Exported\Render\ExportedRenderPass.h" />
+    <ClInclude Include="..\..\Runtime\Exported\Render\ExportedShader.h" />
+    <ClInclude Include="..\..\Runtime\Exported\Render\ExportedTexture2D.h" />
+    <ClInclude Include="..\..\Runtime\Exported\Render\ExportedTextureCube.h" />
+    <ClInclude Include="..\..\Runtime\Exported\Scene\ExportedGameObject.h" />
+    <ClInclude Include="..\..\Runtime\Exported\Scene\ExportedScene.h" />
+    <ClInclude Include="..\..\Runtime\Exported\System\ExportedAsyncCommand.h" />
+    <ClInclude Include="..\..\Runtime\Exported\System\ExportedDevice.h" />
+    <ClInclude Include="..\..\Runtime\Exported\Utils\ExportedBinaryBuffer.h" />
+    <ClInclude Include="..\..\Runtime\Exported\Utils\ExportedString.h" />
+    <ClInclude Include="..\..\Runtime\Exported\Utils\ExportedTimer.h" />
+    <ClInclude Include="..\..\Runtime\Font\CharInfo.h" />
+    <ClInclude Include="..\..\Runtime\Font\DynamicFont.h" />
+    <ClInclude Include="..\..\Runtime\Font\FontFace.h" />
+    <ClInclude Include="..\..\Runtime\Geometry\AABB.h" />
+    <ClInclude Include="..\..\Runtime\Geometry\Bezier.h" />
+    <ClInclude Include="..\..\Runtime\Geometry\CubicBezier.h" />
+    <ClInclude Include="..\..\Runtime\Geometry\Curve.h" />
+    <ClInclude Include="..\..\Runtime\Geometry\Geometry.h" />
+    <ClInclude Include="..\..\Runtime\Geometry\Intersection.h" />
+    <ClInclude Include="..\..\Runtime\Geometry\Plane.h" />
+    <ClInclude Include="..\..\Runtime\Geometry\Point3.h" />
+    <ClInclude Include="..\..\Runtime\Geometry\Ray.h" />
+    <ClInclude Include="..\..\Runtime\Geometry\Sphere.h" />
+    <ClInclude Include="..\..\Runtime\Graphics\DynamicTextureAtlas.h" />
+    <ClInclude Include="..\..\Runtime\Graphics\ImageUtils.h" />
+    <ClInclude Include="..\..\Runtime\Graphics\LuminaceImage.h" />
+    <ClInclude Include="..\..\Runtime\Graphics\QRCodeImage.h" />
+    <ClInclude Include="..\..\Runtime\Graphics\TextureRectangleNode.h" />
+    <ClInclude Include="..\..\Runtime\IO\AliceData.h" />
+    <ClInclude Include="..\..\Runtime\IO\AliceResource.h" />
+    <ClInclude Include="..\..\Runtime\IO\AliceResourceType.h" />
+    <ClInclude Include="..\..\Runtime\IO\AndroidAssetReader.h" />
+    <ClInclude Include="..\..\Runtime\IO\AudioResource.h" />
+    <ClInclude Include="..\..\Runtime\IO\FileItem.h" />
+    <ClInclude Include="..\..\Runtime\IO\FileSystem.h" />
+    <ClInclude Include="..\..\Runtime\IO\FontResource.h" />
+    <ClInclude Include="..\..\Runtime\IO\ImageResource.h" />
+    <ClInclude Include="..\..\Runtime\IO\ResourceManager.h" />
+    <ClInclude Include="..\..\Runtime\IO\ShaderResource.h" />
+    <ClInclude Include="..\..\Runtime\IO\TextureResource.h" />
+    <ClInclude Include="..\..\Runtime\LuaEngine\LuaCallback.h" />
+    <ClInclude Include="..\..\Runtime\LuaEngine\LuaEngine.h" />
+    <ClInclude Include="..\..\Runtime\Math\AliceFloat.h" />
+    <ClInclude Include="..\..\Runtime\Math\AliceMatrix4x4.h" />
+    <ClInclude Include="..\..\Runtime\Math\Color.h" />
+    <ClInclude Include="..\..\Runtime\Math\ColorHSB.h" />
+    <ClInclude Include="..\..\Runtime\Math\Matrix3x3.h" />
+    <ClInclude Include="..\..\Runtime\Math\Quaternion.h" />
+    <ClInclude Include="..\..\Runtime\Math\Rect.h" />
+    <ClInclude Include="..\..\Runtime\Math\Vector2.h" />
+    <ClInclude Include="..\..\Runtime\Math\Vector3.h" />
+    <ClInclude Include="..\..\Runtime\Math\Vector4.h" />
+    <ClInclude Include="..\..\Runtime\NetWork\HttpCurl.h" />
+    <ClInclude Include="..\..\Runtime\NetWork\HttpWorker.h" />
+    <ClInclude Include="..\..\Runtime\NetWork\Socket.h" />
+    <ClInclude Include="..\..\Runtime\NetWork\SocketUtils.h" />
+    <ClInclude Include="..\..\Runtime\NetWork\WWW.h" />
+    <ClInclude Include="..\..\Runtime\Physics\Physics2D.h" />
+    <ClInclude Include="..\..\Runtime\Physics\Physics2DBox.h" />
+    <ClInclude Include="..\..\Runtime\Physics\Physics2DChain.h" />
+    <ClInclude Include="..\..\Runtime\Physics\Physics2DCircle.h" />
+    <ClInclude Include="..\..\Runtime\Physics\Physics2DComponent.h" />
+    <ClInclude Include="..\..\Runtime\Physics\Physics2DEdge.h" />
+    <ClInclude Include="..\..\Runtime\Physics\Physics3D.h" />
+    <ClInclude Include="..\..\Runtime\Physics\Physics3DCapsule.h" />
+    <ClInclude Include="..\..\Runtime\Physics\Physics3DComponent.h" />
+    <ClInclude Include="..\..\Runtime\Physics\Physics3DConvexMesh.h" />
+    <ClInclude Include="..\..\Runtime\Physics\Physics3DCube.h" />
+    <ClInclude Include="..\..\Runtime\Physics\Physics3DHeightField.h" />
+    <ClInclude Include="..\..\Runtime\Physics\Physics3DSphere.h" />
+    <ClInclude Include="..\..\Runtime\Physics\Physics3DTriangleMesh.h" />
+    <ClInclude Include="..\..\Runtime\Physics\PhysicsComponent.h" />
+    <ClInclude Include="..\..\Runtime\Physics\PhysicsManager.h" />
+    <ClInclude Include="..\..\Runtime\Plugins\al\al.h" />
+    <ClInclude Include="..\..\Runtime\Plugins\al\alc.h" />
+    <ClInclude Include="..\..\Runtime\Plugins\al\alext.h" />
+    <ClInclude Include="..\..\Runtime\Plugins\al\efx-creative.h" />
+    <ClInclude Include="..\..\Runtime\Plugins\al\efx-presets.h" />
+    <ClInclude Include="..\..\Runtime\Plugins\al\efx.h" />
+    <ClInclude Include="..\..\Runtime\Plugins\base64.h" />
+    <ClInclude Include="..\..\Runtime\Plugins\freeimage\FreeImage.h" />
+    <ClInclude Include="..\..\Runtime\Plugins\id3\constants.h" />
+    <ClInclude Include="..\..\Runtime\Plugins\id3\frame.h" />
+    <ClInclude Include="..\..\Runtime\Plugins\id3\header.h" />
+    <ClInclude Include="..\..\Runtime\Plugins\id3\id3v2lib.h" />
+    <ClInclude Include="..\..\Runtime\Plugins\id3\types.h" />
+    <ClInclude Include="..\..\Runtime\Plugins\id3\utils.h" />
+    <ClInclude Include="..\..\Runtime\Plugins\json\fpconv.h" />
+    <ClInclude Include="..\..\Runtime\Plugins\json\Json.h" />
+    <ClInclude Include="..\..\Runtime\Plugins\json\strbuf.h" />
+    <ClInclude Include="..\..\Runtime\Plugins\libqrencode\bitstream.h" />
+    <ClInclude Include="..\..\Runtime\Plugins\libqrencode\mask.h" />
+    <ClInclude Include="..\..\Runtime\Plugins\libqrencode\qrencode.h" />
+    <ClInclude Include="..\..\Runtime\Plugins\libqrencode\qrinput.h" />
+    <ClInclude Include="..\..\Runtime\Plugins\libqrencode\qrspec.h" />
+    <ClInclude Include="..\..\Runtime\Plugins\libqrencode\quirc.h" />
+    <ClInclude Include="..\..\Runtime\Plugins\libqrencode\quirc_internal.h" />
+    <ClInclude Include="..\..\Runtime\Plugins\libqrencode\rscode.h" />
+    <ClInclude Include="..\..\Runtime\Plugins\libqrencode\split.h" />
+    <ClInclude Include="..\..\Runtime\Plugins\Lua\lua.hpp" />
+    <ClInclude Include="..\..\Runtime\Plugins\md5\md5.h" />
+    <ClInclude Include="..\..\Runtime\Plugins\mpg123\mpg123.h" />
+    <ClInclude Include="..\..\Runtime\Plugins\socket\luasocket.h" />
+    <ClInclude Include="..\..\Runtime\Plugins\socket\mime.h" />
+    <ClInclude Include="..\..\Runtime\Profiler\Profiler.h" />
+    <ClInclude Include="..\..\Runtime\Render\AliceGL.h" />
+    <ClInclude Include="..\..\Runtime\Render\Attribute.h" />
+    <ClInclude Include="..\..\Runtime\Render\Camera.h" />
+    <ClInclude Include="..\..\Runtime\Render\DrawCall.h" />
+    <ClInclude Include="..\..\Runtime\Render\GL20\BufferObject.h" />
+    <ClInclude Include="..\..\Runtime\Render\GL20\EBO.h" />
+    <ClInclude Include="..\..\Runtime\Render\GL20\FBO.h" />
+    <ClInclude Include="..\..\Runtime\Render\GL20\GLSL.h" />
+    <ClInclude Include="..\..\Runtime\Render\GL20\RBO.h" />
+    <ClInclude Include="..\..\Runtime\Render\GL20\ShaderProperties.h" />
+    <ClInclude Include="..\..\Runtime\Render\GL20\Texture2D.h" />
+    <ClInclude Include="..\..\Runtime\Render\GL20\TextureCube.h" />
+    <ClInclude Include="..\..\Runtime\Render\GL20\TextureUnit.h" />
+    <ClInclude Include="..\..\Runtime\Render\GL20\VBO.h" />
+    <ClInclude Include="..\..\Runtime\Render\IndexBuffer.h" />
+    <ClInclude Include="..\..\Runtime\Render\Light\Light.h" />
+    <ClInclude Include="..\..\Runtime\Render\Material.h" />
+    <ClInclude Include="..\..\Runtime\Render\MaterialProperty.h" />
+    <ClInclude Include="..\..\Runtime\Render\RenderMisc.h" />
+    <ClInclude Include="..\..\Runtime\Render\RenderOrder.h" />
+    <ClInclude Include="..\..\Runtime\Render\RenderPass.h" />
+    <ClInclude Include="..\..\Runtime\Render\RenderState.h" />
+    <ClInclude Include="..\..\Runtime\Render\Shader.h" />
+    <ClInclude Include="..\..\Runtime\Render\UniformUpdater.h" />
+    <ClInclude Include="..\..\Runtime\Render\VertexData.h" />
+    <ClInclude Include="..\..\Runtime\RuntimePrefix.h" />
+    <ClInclude Include="..\..\Runtime\Scene\EventDispatcher.h" />
+    <ClInclude Include="..\..\Runtime\Scene\GameObject.h" />
+    <ClInclude Include="..\..\Runtime\Scene\RendererManager.h" />
+    <ClInclude Include="..\..\Runtime\Scene\SceneManager.h" />
+    <ClInclude Include="..\..\Runtime\Scene\TouchEvent.h" />
+    <ClInclude Include="..\..\Runtime\Serializer\Animation.serializer.h" />
+    <ClInclude Include="..\..\Runtime\Serializer\Assets.serializer.h" />
+    <ClInclude Include="..\..\Runtime\Serializer\Audio.serializer.h" />
+    <ClInclude Include="..\..\Runtime\Serializer\Avatar.serializer.h" />
+    <ClInclude Include="..\..\Runtime\Serializer\Camera.serializer.h" />
+    <ClInclude Include="..\..\Runtime\Serializer\Color.serializer.h" />
+    <ClInclude Include="..\..\Runtime\Serializer\GameObject.serializer.h" />
+    <ClInclude Include="..\..\Runtime\Serializer\GLSL.serializer.h" />
+    <ClInclude Include="..\..\Runtime\Serializer\ImageSprite.serializer.h" />
+    <ClInclude Include="..\..\Runtime\Serializer\Label.serializer.h" />
+    <ClInclude Include="..\..\Runtime\Serializer\Material.serializer.h" />
+    <ClInclude Include="..\..\Runtime\Serializer\Mesh.serializer.h" />
+    <ClInclude Include="..\..\Runtime\Serializer\Particle.serializer.h" />
+    <ClInclude Include="..\..\Runtime\Serializer\Physics.serializer.h" />
+    <ClInclude Include="..\..\Runtime\Serializer\TextureAtlas.serializer.h" />
+    <ClInclude Include="..\..\Runtime\Serializer\TextureInfo.serializer.h" />
+    <ClInclude Include="..\..\Runtime\Serializer\Vector.serializer.h" />
+    <ClInclude Include="..\..\Runtime\Serializer\WindowsPlayer.serializer.h" />
+    <ClInclude Include="..\..\Runtime\String\BinaryBuffer.h" />
+    <ClInclude Include="..\..\Runtime\String\FixedString.h" />
+    <ClInclude Include="..\..\Runtime\String\StringUtils.h" />
+    <ClInclude Include="..\..\Runtime\Thread\AliceThread.h" />
+    <ClInclude Include="..\..\Runtime\Thread\MainThreadScheduler.h" />
+    <ClInclude Include="..\..\Runtime\Thread\ScheduleUnit.h" />
+    <ClInclude Include="..\..\Runtime\Utils\LinkedList.h" />
+    <ClInclude Include="..\..\Runtime\Utils\SmartPtr.h" />
+    <ClInclude Include="..\..\Runtime\Utils\SystemInfo.h" />
+    <ClInclude Include="..\..\Runtime\Utils\Timer.h" />
+    <ClInclude Include="..\..\Runtime\Utils\TreeViewNode.h" />
+    <ClInclude Include="..\..\Runtime\Utils\TTree.h" />
+    <ClInclude Include="..\Win32Common\BaseWindow.h" />
+    <ClInclude Include="..\Win32Common\Control\ButtonControl\ImageButton.h" />
+    <ClInclude Include="..\Win32Common\Control\Control.h" />
+    <ClInclude Include="..\Win32Common\Control\ImageControl\ImageControl.h" />
+    <ClInclude Include="..\Win32Common\Control\ImageControl\ScaledImage.h" />
+    <ClInclude Include="..\Win32Common\Control\ImageControl\SelectableImageControl.h" />
+    <ClInclude Include="..\Win32Common\Control\TextControl\StaticText.h" />
+    <ClInclude Include="..\Win32Common\DoubleBufferedWindow.h" />
+    <ClInclude Include="..\Win32Common\MainWindow.h" />
+    <ClInclude Include="..\Win32Common\RenderContext.h" />
+    <ClInclude Include="..\Win32Common\RenderWindow.h" />
+    <ClInclude Include="..\Win32Common\SplitLine.h" />
+    <ClInclude Include="..\Win32Common\Utils\FolderSelecter.h" />
+    <ClInclude Include="..\Win32Common\WindowEventDispatcher.h" />
+    <ClInclude Include="WinPlayerView.h" />
+    <ClInclude Include="WinPlayerMainWindow.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

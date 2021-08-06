@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{8008A7BC-5A6C-4CB3-BACC-010A16CF56E4}</ProjectGuid>
+    <RootNamespace>FBX2Alice</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\FBX\FBX SDK\2016.1.1\include;D:\VulkanSDK\1.1.121.0\Include;..\..\External\ProtoBuffer\LibProtoBufferLite;..\..\</AdditionalIncludeDirectories>
+      <AdditionalOptions>/D_CRT_SECURE_NO_WARNINGS %(AdditionalOptions)</AdditionalOptions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>D:\FBX\FBX SDK\2016.1.1\lib\vs2015\x86\debug;D:\VulkanSDK\1.1.121.0\Lib32;..\..\External\Debug</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>editbin /subsystem:console $(OutDir)$(ProjectName).exe</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Runtime\Serializer\Animation.serializer.h" />
+    <ClInclude Include="..\..\Runtime\Serializer\Assets.serializer.h" />
+    <ClInclude Include="..\..\Runtime\Serializer\Audio.serializer.h" />
+    <ClInclude Include="..\..\Runtime\Serializer\Avatar.serializer.h" />
+    <ClInclude Include="..\..\Runtime\Serializer\Camera.serializer.h" />
+    <ClInclude Include="..\..\Runtime\Serializer\Color.serializer.h" />
+    <ClInclude Include="..\..\Runtime\Serializer\GameObject.serializer.h" />
+    <ClInclude Include="..\..\Runtime\Serializer\GLSL.serializer.h" />
+    <ClInclude Include="..\..\Runtime\Serializer\ImageSprite.serializer.h" />
+    <ClInclude Include="..\..\Runtime\Serializer\Label.serializer.h" />
+    <ClInclude Include="..\..\Runtime\Serializer\Material.serializer.h" />
+    <ClInclude Include="..\..\Runtime\Serializer\Mesh.serializer.h" />
+    <ClInclude Include="..\..\Runtime\Serializer\Particle.serializer.h" />
+    <ClInclude Include="..\..\Runtime\Serializer\Physics.serializer.h" />
+    <ClInclude Include="..\..\Runtime\Serializer\TextureAtlas.serializer.h" />
+    <ClInclude Include="..\..\Runtime\Serializer\TextureInfo.serializer.h" />
+    <ClInclude Include="..\..\Runtime\Serializer\Vector.serializer.h" />
+    <ClInclude Include="..\..\Runtime\Serializer\WindowsPlayer.serializer.h" />
+    <ClInclude Include="fbx.h" />
+    <ClInclude Include="fbxgpudraw.h" />
+    <ClInclude Include="fbxskeletoncpu.h" />
+    <ClInclude Include="fbxskeletongpu.h" />
+    <ClInclude Include="FrameBuffer.h" />
+    <ClInclude Include="FSQ.h" />
+    <ClInclude Include="ggl.h" />
+    <ClInclude Include="Ground.h" />
+    <ClInclude Include="IndexBuffer.h" />
+    <ClInclude Include="Material.h" />
+    <ClInclude Include="Model.h" />
+    <ClInclude Include="scene.h" />
+    <ClInclude Include="stb_image_aug.h" />
+    <ClInclude Include="Texture2D.h" />
+    <ClInclude Include="UniformBuffer.h" />
+    <ClInclude Include="utils.h" />
+    <ClInclude Include="VertexBuffer.h" />
+    <ClInclude Include="XVulkan.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Runtime\Serializer\Animation.serializer.cpp" />
+    <ClCompile Include="..\..\Runtime\Serializer\Assets.serializer.cpp" />
+    <ClCompile Include="..\..\Runtime\Serializer\Audio.serializer.cpp" />
+    <ClCompile Include="..\..\Runtime\Serializer\Avatar.serializer.cpp" />
+    <ClCompile Include="..\..\Runtime\Serializer\Camera.serializer.cpp" />
+    <ClCompile Include="..\..\Runtime\Serializer\Color.serializer.cpp" />
+    <ClCompile Include="..\..\Runtime\Serializer\GameObject.serializer.cpp" />
+    <ClCompile Include="..\..\Runtime\Serializer\GLSL.serializer.cpp" />
+    <ClCompile Include="..\..\Runtime\Serializer\ImageSprite.serializer.cpp" />
+    <ClCompile Include="..\..\Runtime\Serializer\Label.serializer.cpp" />
+    <ClCompile Include="..\..\Runtime\Serializer\Material.serializer.cpp" />
+    <ClCompile Include="..\..\Runtime\Serializer\Mesh.serializer.cpp" />
+    <ClCompile Include="..\..\Runtime\Serializer\Particle.serializer.cpp" />
+    <ClCompile Include="..\..\Runtime\Serializer\Physics.serializer.cpp" />
+    <ClCompile Include="..\..\Runtime\Serializer\TextureAtlas.serializer.cpp" />
+    <ClCompile Include="..\..\Runtime\Serializer\TextureInfo.serializer.cpp" />
+    <ClCompile Include="..\..\Runtime\Serializer\Vector.serializer.cpp" />
+    <ClCompile Include="..\..\Runtime\Serializer\WindowsPlayer.serializer.cpp" />
+    <ClCompile Include="fbx.cpp" />
+    <ClCompile Include="fbxgpudraw.cpp" />
+    <ClCompile Include="fbxskeletoncpu.cpp" />
+    <ClCompile Include="fbxskeletongpu.cpp" />
+    <ClCompile Include="FrameBuffer.cpp" />
+    <ClCompile Include="FSQ.cpp" />
+    <ClCompile Include="Ground.cpp" />
+    <ClCompile Include="IndexBuffer.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Material.cpp" />
+    <ClCompile Include="Model.cpp" />
+    <ClCompile Include="scene.cpp" />
+    <ClCompile Include="stb_image_aug.c" />
+    <ClCompile Include="Texture2D.cpp" />
+    <ClCompile Include="UniformBuffer.cpp" />
+    <ClCompile Include="utils.cpp" />
+    <ClCompile Include="VertexBuffer.cpp" />
+    <ClCompile Include="XVulkan.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

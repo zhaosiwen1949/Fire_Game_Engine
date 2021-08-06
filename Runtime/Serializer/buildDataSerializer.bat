@@ -1,0 +1,20 @@
+protoc --cpp_out=. Color.proto
+protoc --cpp_out=. Vector.proto
+protoc --cpp_out=. Camera.proto
+protoc --cpp_out=. TextureAtlas.proto
+protoc --cpp_out=. Material.proto
+protoc --cpp_out=. ImageSprite.proto
+protoc --cpp_out=. GameObject.proto
+protoc --cpp_out=. Mesh.proto
+protoc --cpp_out=. Animation.proto
+protoc --cpp_out=. Assets.proto
+protoc --cpp_out=. Label.proto
+protoc --cpp_out=. GLSL.proto
+protoc --cpp_out=. WindowsPlayer.proto
+protoc --cpp_out=. TextureInfo.proto
+protoc --cpp_out=. Audio.proto
+protoc --cpp_out=. Physics.proto
+protoc --cpp_out=. Particle.proto
+protoc --cpp_out=. Mesh.proto
+protoc --cpp_out=. Avatar.proto
+@pause

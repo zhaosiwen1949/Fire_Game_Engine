@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Runtime\Serializer\Animation.serializer.cpp" />
+    <ClCompile Include="..\..\Runtime\Serializer\Assets.serializer.cpp" />
+    <ClCompile Include="..\..\Runtime\Serializer\Avatar.serializer.cpp" />
+    <ClCompile Include="..\..\Runtime\Serializer\Color.serializer.cpp" />
+    <ClCompile Include="..\..\Runtime\Serializer\GameObject.serializer.cpp" />
+    <ClCompile Include="..\..\Runtime\Serializer\ImageSprite.serializer.cpp" />
+    <ClCompile Include="..\..\Runtime\Serializer\TextureAtlas.serializer.cpp" />
+    <ClCompile Include="..\..\Runtime\Serializer\TextureInfo.serializer.cpp" />
+    <ClCompile Include="..\..\Runtime\Serializer\Vector.serializer.cpp" />
+    <ClCompile Include="AnimationUtils.cpp" />
+    <ClCompile Include="AttachmentUtils.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="SerializerUtils.cpp" />
+    <ClCompile Include="spine-c\src\spine\Animation.c" />
+    <ClCompile Include="spine-c\src\spine\AnimationState.c" />
+    <ClCompile Include="spine-c\src\spine\AnimationStateData.c" />
+    <ClCompile Include="spine-c\src\spine\Array.c" />
+    <ClCompile Include="spine-c\src\spine\Atlas.c" />
+    <ClCompile Include="spine-c\src\spine\AtlasAttachmentLoader.c" />
+    <ClCompile Include="spine-c\src\spine\Attachment.c" />
+    <ClCompile Include="spine-c\src\spine\AttachmentLoader.c" />
+    <ClCompile Include="spine-c\src\spine\Bone.c" />
+    <ClCompile Include="spine-c\src\spine\BoneData.c" />
+    <ClCompile Include="spine-c\src\spine\BoundingBoxAttachment.c" />
+    <ClCompile Include="spine-c\src\spine\ClippingAttachment.c" />
+    <ClCompile Include="spine-c\src\spine\Color.c" />
+    <ClCompile Include="spine-c\src\spine\Event.c" />
+    <ClCompile Include="spine-c\src\spine\EventData.c" />
+    <ClCompile Include="spine-c\src\spine\extension.c" />
+    <ClCompile Include="spine-c\src\spine\IkConstraint.c" />
+    <ClCompile Include="spine-c\src\spine\IkConstraintData.c" />
+    <ClCompile Include="spine-c\src\spine\Json.c" />
+    <ClCompile Include="spine-c\src\spine\MeshAttachment.c" />
+    <ClCompile Include="spine-c\src\spine\PathAttachment.c" />
+    <ClCompile Include="spine-c\src\spine\PathConstraint.c" />
+    <ClCompile Include="spine-c\src\spine\PathConstraintData.c" />
+    <ClCompile Include="spine-c\src\spine\PointAttachment.c" />
+    <ClCompile Include="spine-c\src\spine\RegionAttachment.c" />
+    <ClCompile Include="spine-c\src\spine\Skeleton.c" />
+    <ClCompile Include="spine-c\src\spine\SkeletonBinary.c" />
+    <ClCompile Include="spine-c\src\spine\SkeletonBounds.c" />
+    <ClCompile Include="spine-c\src\spine\SkeletonClipping.c" />
+    <ClCompile Include="spine-c\src\spine\SkeletonData.c" />
+    <ClCompile Include="spine-c\src\spine\SkeletonJson.c" />
+    <ClCompile Include="spine-c\src\spine\Skin.c" />
+    <ClCompile Include="spine-c\src\spine\Slot.c" />
+    <ClCompile Include="spine-c\src\spine\SlotData.c" />
+    <ClCompile Include="spine-c\src\spine\TransformConstraint.c" />
+    <ClCompile Include="spine-c\src\spine\TransformConstraintData.c" />
+    <ClCompile Include="spine-c\src\spine\Triangulator.c" />
+    <ClCompile Include="spine-c\src\spine\VertexAttachment.c" />
+    <ClCompile Include="spine-c\src\spine\VertexEffect.c" />
+    <ClCompile Include="SpineUtils.cpp" />
+    <ClCompile Include="utils.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Runtime\Serializer\Animation.serializer.h" />
+    <ClInclude Include="..\..\Runtime\Serializer\Assets.serializer.h" />
+    <ClInclude Include="..\..\Runtime\Serializer\Avatar.serializer.h" />
+    <ClInclude Include="..\..\Runtime\Serializer\Color.serializer.h" />
+    <ClInclude Include="..\..\Runtime\Serializer\GameObject.serializer.h" />
+    <ClInclude Include="..\..\Runtime\Serializer\ImageSprite.serializer.h" />
+    <ClInclude Include="..\..\Runtime\Serializer\TextureAtlas.serializer.h" />
+    <ClInclude Include="..\..\Runtime\Serializer\TextureInfo.serializer.h" />
+    <ClInclude Include="..\..\Runtime\Serializer\Vector.serializer.h" />
+    <ClInclude Include="AnimationUtils.h" />
+    <ClInclude Include="AttachmentUtils.h" />
+    <ClInclude Include="SerializerUtils.h" />
+    <ClInclude Include="spine-c\include\spine\Animation.h" />
+    <ClInclude Include="spine-c\include\spine\AnimationState.h" />
+    <ClInclude Include="spine-c\include\spine\AnimationStateData.h" />
+    <ClInclude Include="spine-c\include\spine\Array.h" />
+    <ClInclude Include="spine-c\include\spine\Atlas.h" />
+    <ClInclude Include="spine-c\include\spine\AtlasAttachmentLoader.h" />
+    <ClInclude Include="spine-c\include\spine\Attachment.h" />
+    <ClInclude Include="spine-c\include\spine\AttachmentLoader.h" />
+    <ClInclude Include="spine-c\include\spine\Bone.h" />
+    <ClInclude Include="spine-c\include\spine\BoneData.h" />
+    <ClInclude Include="spine-c\include\spine\BoundingBoxAttachment.h" />
+    <ClInclude Include="spine-c\include\spine\ClippingAttachment.h" />
+    <ClInclude Include="spine-c\include\spine\Color.h" />
+    <ClInclude Include="spine-c\include\spine\dll.h" />
+    <ClInclude Include="spine-c\include\spine\Event.h" />
+    <ClInclude Include="spine-c\include\spine\EventData.h" />
+    <ClInclude Include="spine-c\include\spine\extension.h" />
+    <ClInclude Include="spine-c\include\spine\IkConstraint.h" />
+    <ClInclude Include="spine-c\include\spine\IkConstraintData.h" />
+    <ClInclude Include="spine-c\include\spine\MeshAttachment.h" />
+    <ClInclude Include="spine-c\include\spine\PathAttachment.h" />
+    <ClInclude Include="spine-c\include\spine\PathConstraint.h" />
+    <ClInclude Include="spine-c\include\spine\PathConstraintData.h" />
+    <ClInclude Include="spine-c\include\spine\PointAttachment.h" />
+    <ClInclude Include="spine-c\include\spine\RegionAttachment.h" />
+    <ClInclude Include="spine-c\include\spine\Skeleton.h" />
+    <ClInclude Include="spine-c\include\spine\SkeletonBinary.h" />
+    <ClInclude Include="spine-c\include\spine\SkeletonBounds.h" />
+    <ClInclude Include="spine-c\include\spine\SkeletonClipping.h" />
+    <ClInclude Include="spine-c\include\spine\SkeletonData.h" />
+    <ClInclude Include="spine-c\include\spine\SkeletonJson.h" />
+    <ClInclude Include="spine-c\include\spine\Skin.h" />
+    <ClInclude Include="spine-c\include\spine\Slot.h" />
+    <ClInclude Include="spine-c\include\spine\SlotData.h" />
+    <ClInclude Include="spine-c\include\spine\spine.h" />
+    <ClInclude Include="spine-c\include\spine\TransformConstraint.h" />
+    <ClInclude Include="spine-c\include\spine\TransformConstraintData.h" />
+    <ClInclude Include="spine-c\include\spine\Triangulator.h" />
+    <ClInclude Include="spine-c\include\spine\VertexAttachment.h" />
+    <ClInclude Include="spine-c\include\spine\VertexEffect.h" />
+    <ClInclude Include="spine-c\src\spine\Json.h" />
+    <ClInclude Include="SpineUtils.h" />
+    <ClInclude Include="utils.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DEC1EEC6-FF3C-479F-8FDD-71D753FB41A7}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>DataConvert</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <ProjectName>spine2alice</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..;..\..\External\ProtoBuffer\LibProtoBufferLite;..\..\Runtime\Serializer;spine-c\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/D_CRT_SECURE_NO_WARNINGS %(AdditionalOptions)</AdditionalOptions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\..\External\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

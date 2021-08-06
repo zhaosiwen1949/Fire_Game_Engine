@@ -1,0 +1,351 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="serializer">
+      <UniqueIdentifier>{25489386-0345-4c58-b7bb-0c15cc9fe342}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="spineinclude">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="spinec">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="utils.cpp">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SerializerUtils.cpp">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SpineUtils.cpp">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationUtils.cpp">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AttachmentUtils.cpp">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Serializer\Vector.serializer.cpp">
+      <Filter>serializer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Serializer\Animation.serializer.cpp">
+      <Filter>serializer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Serializer\Assets.serializer.cpp">
+      <Filter>serializer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Serializer\Avatar.serializer.cpp">
+      <Filter>serializer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Serializer\Color.serializer.cpp">
+      <Filter>serializer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Serializer\GameObject.serializer.cpp">
+      <Filter>serializer</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-c\src\spine\Array.c">
+      <Filter>spinec</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-c\src\spine\Atlas.c">
+      <Filter>spinec</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-c\src\spine\AtlasAttachmentLoader.c">
+      <Filter>spinec</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-c\src\spine\Attachment.c">
+      <Filter>spinec</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-c\src\spine\AttachmentLoader.c">
+      <Filter>spinec</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-c\src\spine\Bone.c">
+      <Filter>spinec</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-c\src\spine\BoneData.c">
+      <Filter>spinec</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-c\src\spine\BoundingBoxAttachment.c">
+      <Filter>spinec</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-c\src\spine\ClippingAttachment.c">
+      <Filter>spinec</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-c\src\spine\Color.c">
+      <Filter>spinec</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-c\src\spine\Event.c">
+      <Filter>spinec</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-c\src\spine\EventData.c">
+      <Filter>spinec</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-c\src\spine\extension.c">
+      <Filter>spinec</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-c\src\spine\IkConstraint.c">
+      <Filter>spinec</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-c\src\spine\IkConstraintData.c">
+      <Filter>spinec</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-c\src\spine\Json.c">
+      <Filter>spinec</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-c\src\spine\MeshAttachment.c">
+      <Filter>spinec</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-c\src\spine\PathAttachment.c">
+      <Filter>spinec</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-c\src\spine\PathConstraint.c">
+      <Filter>spinec</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-c\src\spine\PathConstraintData.c">
+      <Filter>spinec</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-c\src\spine\PointAttachment.c">
+      <Filter>spinec</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-c\src\spine\RegionAttachment.c">
+      <Filter>spinec</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-c\src\spine\Skeleton.c">
+      <Filter>spinec</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-c\src\spine\SkeletonBinary.c">
+      <Filter>spinec</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-c\src\spine\SkeletonBounds.c">
+      <Filter>spinec</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-c\src\spine\SkeletonClipping.c">
+      <Filter>spinec</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-c\src\spine\SkeletonData.c">
+      <Filter>spinec</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-c\src\spine\SkeletonJson.c">
+      <Filter>spinec</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-c\src\spine\Skin.c">
+      <Filter>spinec</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-c\src\spine\Slot.c">
+      <Filter>spinec</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-c\src\spine\SlotData.c">
+      <Filter>spinec</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-c\src\spine\TransformConstraint.c">
+      <Filter>spinec</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-c\src\spine\TransformConstraintData.c">
+      <Filter>spinec</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-c\src\spine\Triangulator.c">
+      <Filter>spinec</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-c\src\spine\VertexAttachment.c">
+      <Filter>spinec</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-c\src\spine\VertexEffect.c">
+      <Filter>spinec</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-c\src\spine\Animation.c">
+      <Filter>spinec</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-c\src\spine\AnimationState.c">
+      <Filter>spinec</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-c\src\spine\AnimationStateData.c">
+      <Filter>spinec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Serializer\ImageSprite.serializer.cpp">
+      <Filter>serializer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Serializer\TextureAtlas.serializer.cpp">
+      <Filter>serializer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Serializer\TextureInfo.serializer.cpp">
+      <Filter>serializer</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="utils.h">
+      <Filter>资源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SerializerUtils.h">
+      <Filter>资源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SpineUtils.h">
+      <Filter>资源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationUtils.h">
+      <Filter>资源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AttachmentUtils.h">
+      <Filter>资源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Serializer\GameObject.serializer.h">
+      <Filter>serializer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Serializer\Vector.serializer.h">
+      <Filter>serializer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Serializer\Animation.serializer.h">
+      <Filter>serializer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Serializer\Assets.serializer.h">
+      <Filter>serializer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Serializer\Avatar.serializer.h">
+      <Filter>serializer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Serializer\Color.serializer.h">
+      <Filter>serializer</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-c\include\spine\BoundingBoxAttachment.h">
+      <Filter>spineinclude</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-c\include\spine\ClippingAttachment.h">
+      <Filter>spineinclude</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-c\include\spine\Color.h">
+      <Filter>spineinclude</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-c\include\spine\dll.h">
+      <Filter>spineinclude</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-c\include\spine\Event.h">
+      <Filter>spineinclude</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-c\include\spine\EventData.h">
+      <Filter>spineinclude</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-c\include\spine\extension.h">
+      <Filter>spineinclude</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-c\include\spine\IkConstraint.h">
+      <Filter>spineinclude</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-c\include\spine\IkConstraintData.h">
+      <Filter>spineinclude</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-c\include\spine\MeshAttachment.h">
+      <Filter>spineinclude</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-c\include\spine\PathAttachment.h">
+      <Filter>spineinclude</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-c\include\spine\PathConstraint.h">
+      <Filter>spineinclude</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-c\include\spine\PathConstraintData.h">
+      <Filter>spineinclude</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-c\include\spine\PointAttachment.h">
+      <Filter>spineinclude</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-c\include\spine\RegionAttachment.h">
+      <Filter>spineinclude</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-c\include\spine\Skeleton.h">
+      <Filter>spineinclude</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-c\include\spine\SkeletonBinary.h">
+      <Filter>spineinclude</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-c\include\spine\SkeletonBounds.h">
+      <Filter>spineinclude</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-c\include\spine\SkeletonClipping.h">
+      <Filter>spineinclude</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-c\include\spine\SkeletonData.h">
+      <Filter>spineinclude</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-c\include\spine\SkeletonJson.h">
+      <Filter>spineinclude</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-c\include\spine\Skin.h">
+      <Filter>spineinclude</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-c\include\spine\Slot.h">
+      <Filter>spineinclude</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-c\include\spine\SlotData.h">
+      <Filter>spineinclude</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-c\include\spine\spine.h">
+      <Filter>spineinclude</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-c\include\spine\TransformConstraint.h">
+      <Filter>spineinclude</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-c\include\spine\TransformConstraintData.h">
+      <Filter>spineinclude</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-c\include\spine\Triangulator.h">
+      <Filter>spineinclude</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-c\include\spine\VertexAttachment.h">
+      <Filter>spineinclude</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-c\include\spine\VertexEffect.h">
+      <Filter>spineinclude</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-c\include\spine\Animation.h">
+      <Filter>spineinclude</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-c\include\spine\AnimationState.h">
+      <Filter>spineinclude</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-c\include\spine\AnimationStateData.h">
+      <Filter>spineinclude</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-c\include\spine\Array.h">
+      <Filter>spineinclude</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-c\include\spine\Atlas.h">
+      <Filter>spineinclude</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-c\include\spine\AtlasAttachmentLoader.h">
+      <Filter>spineinclude</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-c\include\spine\Attachment.h">
+      <Filter>spineinclude</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-c\include\spine\AttachmentLoader.h">
+      <Filter>spineinclude</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-c\include\spine\Bone.h">
+      <Filter>spineinclude</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-c\include\spine\BoneData.h">
+      <Filter>spineinclude</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-c\src\spine\Json.h">
+      <Filter>spinec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Serializer\ImageSprite.serializer.h">
+      <Filter>serializer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Serializer\TextureAtlas.serializer.h">
+      <Filter>serializer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Serializer\TextureInfo.serializer.h">
+      <Filter>serializer</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

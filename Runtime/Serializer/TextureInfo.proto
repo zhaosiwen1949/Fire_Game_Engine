@@ -1,0 +1,49 @@
+package Serializer;
+option optimize_for = LITE_RUNTIME;
+message ETC1Data{
+	optional bytes RGB=1;
+	optional bytes Alpha=2;
+}
+message ImageCompressInfo{
+	//max size
+	optional int32 max_size=1;
+	//image format,reference to format define in c++ code
+	optional int32 format=2;
+	//slow or fast
+	optional int32 quality=3;
+}
+message Sprite{
+	optional string name=1;
+	repeated int32 original=2;//left bottom original point
+	repeated int32 size=3;//width,height
+	repeated float texcoords=4;//left,bottom,right,top
+	repeated int32 split=5;
+	repeated int32 pad=6;
+	optional bool rotate=7;
+}
+message Texture{
+	optional string path=1;
+	optional bytes image_data=2;//raw image file/compressed image file
+	optional string guid=3;
+	optional int32 min_filter=4;
+	optional int32 mag_filter=5;
+	optional int32 format=6;
+	optional int32 width=7;
+	optional int32 height=8;
+	optional int32 wrap_mode_u=9;
+	optional int32 wrap_mode_v=10;
+	repeated Sprite sprites=11;
+}
+message TextureInfo{
+	optional string path=1;
+	optional string guid=2;
+	optional int32 wrapMode=3;
+	optional ImageCompressInfo Editor=4;
+	optional ImageCompressInfo IOS=5;
+	optional ImageCompressInfo Android=6;
+	//etc1/pvrtc/png/jpg/bmp raw data
+	optional bytes imageData=7;
+	optional int32 width=8;
+	optional int32 height=9;
+	optional fixed64 last_write_time=10;
+}

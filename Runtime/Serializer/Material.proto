@@ -1,0 +1,88 @@
+package Serializer;
+option optimize_for = LITE_RUNTIME;
+import "Vector.proto";
+import "TextureAtlas.proto";
+import "GLSL.proto";
+message Texture2DProperty{
+	//uniform name in shader
+	optional string name=1;
+	//image path
+	optional string image=2;
+}
+message TextureCubeProperty{
+	//uniform name in shader
+	optional string name=1;
+	//image path
+	optional string image=2;
+}
+message Vector4Property{
+	//uniform name in shader
+	optional string name=1;
+	//uniform value
+	repeated float value=2;
+}
+message IntArrayProperty{
+	//uniform name in shader
+	optional string name=1;
+	//uniform value
+	repeated int32 value=2;
+}
+message Vector4ArrayProperty{
+	//uniform name in shader
+	optional string name=1;
+	//uniform value
+	repeated Vector4f value=2;
+}
+message standard_lambert_material_param{	
+}
+message standard_phong_material_param{
+}
+message standard_blin_phong_material_param{
+}
+message custom_material_param{
+	repeated Texture2DProperty sampler2ds=1;
+	repeated Vector4Property vec4s=2;
+}
+message builtin_uniform_param{
+	repeated UniformDefine uniforms=1;
+}
+message Material{
+	optional string path=1;
+	optional string shader=2;
+	repeated Texture2DProperty mSampler2DProperties_desperated=3;
+	repeated Vector4Property mVector4fProperties_desperated=4;
+	optional bool useAtlas=5;
+	optional fixed64 lwt_shader=6;
+	repeated ImageTile sprites=7;
+	optional string vsshader=8;
+	optional bool enable_blend=9;
+	optional bool enable_program_point_size=10;
+	optional bool enable_point_sprite=11;
+	optional standard_lambert_material_param lambert_params=12;
+	optional standard_phong_material_param phong_params=13;
+	optional standard_blin_phong_material_param blin_phong_params=14;
+	optional custom_material_param custom_params=15;
+	optional int32 blend_func_src=16;
+	optional int32 blend_func_dst=17;
+	optional builtin_uniform_param builtin_params=18;
+}
+message MaterialEx{
+	optional string name=1;
+	repeated Texture2DProperty texture2ds=2;
+	repeated TextureCubeProperty texture_cubes=3;
+	repeated Vector4Property vector4s=4;
+	repeated IntArrayProperty int_array=5;
+	repeated Vector4ArrayProperty vector4_array=6;
+	repeated string mat4s=7;
+	repeated string mat3s=8;
+	repeated int32 blend_func=9;
+	optional bool enable_blend=10;
+	optional bool enable_program_point_size=11;
+	optional bool enable_point_sprite=12;
+	optional bool enable_cull_face=13;
+	optional int32 cull_face_mode=14;
+	optional bool enable_depth_test=15;
+	optional int32 primitive_type=16;
+	optional string vs_shader=17;
+	optional string fs_shader=18;
+}

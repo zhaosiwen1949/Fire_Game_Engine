@@ -1,0 +1,13 @@
+package Serializer;
+option optimize_for = LITE_RUNTIME;
+
+message WinPlayerSize
+{
+	optional int32 width=1;
+	optional int32 height=2;
+}
+
+message WinPlayerSettings
+{
+	repeated WinPlayerSize predefined_resolution=1;
+}

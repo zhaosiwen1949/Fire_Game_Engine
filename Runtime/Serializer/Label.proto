@@ -1,0 +1,18 @@
+package Serializer;
+option optimize_for = LITE_RUNTIME;
+import "Color.proto";
+
+message Label
+{
+	repeated int32 text=1;
+	optional string font=2;
+	optional int32 charsize=3;
+	optional int32 style=4;//0:normal,1:bold,2:italic,3:italicbold
+	optional int32 outlineSize=5;
+	optional Color4B outlinecolor=6;
+	optional int32 shadowx=7;
+	optional int32 shadowy=8;
+	optional int32 aligning=9;
+	optional Color4B textColor=10;
+	optional Color4B shadowColor=11;
+}

@@ -1,0 +1,1832 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Runtime">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Entry">
+      <UniqueIdentifier>{441d7981-fceb-4bb6-b5e4-a3e35b5bfa1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime\Utils">
+      <UniqueIdentifier>{a75c6520-abbc-4f63-9ca9-ffc6a0210a3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime\Base">
+      <UniqueIdentifier>{39803f74-df48-42ba-8dac-bdad60a77af5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime\Debugger">
+      <UniqueIdentifier>{c48bc513-e27e-4557-b1ca-c264aa2b850e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime\Render">
+      <UniqueIdentifier>{5e193125-686e-4d48-b216-adaa0e18cde4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime\Allocator">
+      <UniqueIdentifier>{9640be5e-ff8a-4386-a3d4-c75ade0cd8f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime\Allocator\tlsf">
+      <UniqueIdentifier>{92bc8c27-6253-4675-8c9b-db8d54a85957}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime\String">
+      <UniqueIdentifier>{763f0218-3639-4f65-8138-217b0b2ef140}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Utils">
+      <UniqueIdentifier>{4ee1cb81-7d72-44dd-a77f-49054a338015}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Control">
+      <UniqueIdentifier>{90e3495a-cabf-49ff-8b3d-4d9d40bde915}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Control\ButtonControl">
+      <UniqueIdentifier>{f3cfa6cc-be02-48a0-8e1c-0c4a8b35e135}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Control\ImageControl">
+      <UniqueIdentifier>{877e13f0-cfa6-4261-90bf-b91d0d88e99a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Control\TextControl">
+      <UniqueIdentifier>{a7ed0651-6d54-4586-96b4-97ed7df27a3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime\IO">
+      <UniqueIdentifier>{57acd5da-9b65-48ca-bfb1-7aab41967cbf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime\Android">
+      <UniqueIdentifier>{6996c117-9efa-4043-81c5-5fc1d76113d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime\Scene">
+      <UniqueIdentifier>{3fdffa0b-4a80-431a-b0fa-72210b9d390c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime\Plugins">
+      <UniqueIdentifier>{1bab261d-415e-4d71-aff3-f212a3c8bc69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime\Plugins\id3">
+      <UniqueIdentifier>{c84b5a15-9f63-472b-a441-0377477a6891}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime\Plugins\al">
+      <UniqueIdentifier>{5e2a01ea-b2ab-49b1-a029-43b1e1e63826}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime\Plugins\freeimage">
+      <UniqueIdentifier>{5d62c49d-75c9-418e-a1f3-95000de6716b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime\Plugins\json">
+      <UniqueIdentifier>{d7ce85a2-a9aa-4374-89e8-e36ec49b99a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime\Plugins\Lua">
+      <UniqueIdentifier>{b9c9597a-c2ac-47b0-8808-a8a9d12c84a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime\Plugins\md5">
+      <UniqueIdentifier>{39a77bf4-9e4e-4bad-8b8c-a6a9ecab45aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime\Plugins\mpg123">
+      <UniqueIdentifier>{18ff8fe5-e538-4ef1-9492-15c97f0f6b09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime\Plugins\socket">
+      <UniqueIdentifier>{6b7f6fa0-1bbd-4d6d-8107-87d370c8e9a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime\Plugins\xml">
+      <UniqueIdentifier>{56cbd37a-3382-42cd-b3e5-02d3756c323b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime\Plugins\luazip">
+      <UniqueIdentifier>{4dad0fb7-a77b-4d8a-b960-de80a85e93e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime\LuaEngine">
+      <UniqueIdentifier>{f9727815-05c9-4339-86f4-2c32d75b85bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime\Plugins\libqrencode">
+      <UniqueIdentifier>{3376e4fa-f6f5-43ba-9d78-600cf02f268e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime\Graphics">
+      <UniqueIdentifier>{742c4552-5fab-4dfd-953a-b5bcb03a53e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime\NetWork">
+      <UniqueIdentifier>{b5770f5a-e8a2-467a-94af-d22e3658b03b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime\Serializer">
+      <UniqueIdentifier>{16af0f24-104f-427b-86e5-eac9cb03eec2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime\Math">
+      <UniqueIdentifier>{94c95bfd-2afa-4c31-863a-219168d58b8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime\Render\GL20">
+      <UniqueIdentifier>{9908d593-a02d-4c99-b7cf-83c11c721882}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime\Geometry">
+      <UniqueIdentifier>{d07733b2-aedd-40eb-a436-7b72fd53e00b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime\Audio">
+      <UniqueIdentifier>{3b65820a-9c64-4394-b37e-dca7449c06d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime\2D">
+      <UniqueIdentifier>{5ac9fd68-850f-499c-85a9-d7883387d88b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime\3D">
+      <UniqueIdentifier>{9c9335c3-722d-4641-b094-0e97f950c21b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime\Render\Light">
+      <UniqueIdentifier>{e0dea278-88ef-4562-998a-8c44fbef9f44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime\Builtin">
+      <UniqueIdentifier>{2fd07c37-f30a-4862-a219-f134c1422098}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime\Builtin\3D">
+      <UniqueIdentifier>{a27a9a86-11dc-47ea-bd44-4c7888b421b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime\Font">
+      <UniqueIdentifier>{582cf708-28b6-4a5b-8820-b96fab2ea9fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime\Animation">
+      <UniqueIdentifier>{8ea8aac1-191f-425c-a1c5-e7126f9c7470}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime\Thread">
+      <UniqueIdentifier>{30cd818d-96cc-44b9-8fc1-15911867218a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime\Physics">
+      <UniqueIdentifier>{21b6fa97-01a2-4926-9a46-a75533c9562e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime\Exported">
+      <UniqueIdentifier>{02cbec46-10e6-4d89-ae5c-5f666bcd62f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime\Exported\Component">
+      <UniqueIdentifier>{84495a96-c4dc-4403-a6cf-f7765d514f46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime\Exported\Geometry">
+      <UniqueIdentifier>{6e045621-53b6-445a-b242-6aeda6df6f76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime\Exported\Graphic">
+      <UniqueIdentifier>{950ff261-2553-4e4b-8361-76460140f90e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime\Exported\IO">
+      <UniqueIdentifier>{b0846058-4489-467b-8bd2-aa9dc25e807c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime\Exported\LuaEngine">
+      <UniqueIdentifier>{c6c025c3-8609-4db9-ad42-62eae86ac3dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime\Exported\Math">
+      <UniqueIdentifier>{2f9f81bd-0e86-495c-b7ec-ad629791bd4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime\Exported\NetWork">
+      <UniqueIdentifier>{0e1df299-bf29-4c36-bdb8-132bd70df1e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime\Exported\Physics">
+      <UniqueIdentifier>{e7822ef6-ad1c-4730-814a-1c746b6e9ce9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime\Exported\Render">
+      <UniqueIdentifier>{9c5a46d0-9b68-4fe1-b3a5-a7a03f21d023}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime\Exported\Scene">
+      <UniqueIdentifier>{5e7c894c-e868-43dd-99e3-3565db1f5e77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime\Exported\System">
+      <UniqueIdentifier>{4ced1682-115f-436f-bf2e-da22634b58e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime\Exported\Utils">
+      <UniqueIdentifier>{d4c012c9-cbdd-4a49-aa40-4fb3d3e01b46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime\Device">
+      <UniqueIdentifier>{a527b159-e2b1-4bc0-adb4-dbb3d435ac22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime\Profiler">
+      <UniqueIdentifier>{5d72e1f2-1554-4334-81b9-edcbae696cfc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime\Exported\2D">
+      <UniqueIdentifier>{fe1bc725-787f-4579-a7a7-99a8ed2f5a66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime\Exported\3D">
+      <UniqueIdentifier>{0452ca91-f662-429b-9277-769215341436}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Entry</Filter>
+    </ClCompile>
+    <ClCompile Include="EntryProxy.cpp">
+      <Filter>Entry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Win32Common\WindowEventDispatcher.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Debugger\Log.cpp">
+      <Filter>Runtime\Debugger</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Win32Common\BaseWindow.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Win32Common\SplitLine.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Win32Common\DoubleBufferedWindow.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Win32Common\RenderWindow.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Win32Common\RenderContext.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Win32Common\MainWindow.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Allocator\DefaultAllocator.cpp">
+      <Filter>Runtime\Allocator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Allocator\tlsf\tlsf.c">
+      <Filter>Runtime\Allocator\tlsf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\String\StringUtils.cpp">
+      <Filter>Runtime\String</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Win32Common\Utils\FolderSelecter.cpp">
+      <Filter>Common\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Win32Common\Control\Control.cpp">
+      <Filter>Common\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Win32Common\Control\TextControl\StaticText.cpp">
+      <Filter>Common\Control\TextControl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Win32Common\Control\ImageControl\ScaledImage.cpp">
+      <Filter>Common\Control\ImageControl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Win32Common\Control\ImageControl\SelectableImageControl.cpp">
+      <Filter>Common\Control\ImageControl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Win32Common\Control\ImageControl\ImageControl.cpp">
+      <Filter>Common\Control\ImageControl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Win32Common\Control\ButtonControl\ImageButton.cpp">
+      <Filter>Common\Control\ButtonControl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\IO\AliceData.cpp">
+      <Filter>Runtime\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\IO\FileItem.cpp">
+      <Filter>Runtime\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\IO\FileSystem.cpp">
+      <Filter>Runtime\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="WinPlayerView.cpp">
+      <Filter>Entry</Filter>
+    </ClCompile>
+    <ClCompile Include="WinPlayerMainWindow.cpp">
+      <Filter>Entry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Android\AndroidRuntime.cpp">
+      <Filter>Runtime\Android</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Base\Object.cpp">
+      <Filter>Runtime\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Base\AliceGUID.cpp">
+      <Filter>Runtime\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Scene\SceneManager.cpp">
+      <Filter>Runtime\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Debugger\Debugger.cpp">
+      <Filter>Runtime\Debugger</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Plugins\id3\frame.c">
+      <Filter>Runtime\Plugins\id3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Plugins\id3\header.c">
+      <Filter>Runtime\Plugins\id3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Plugins\id3\id3v2lib.c">
+      <Filter>Runtime\Plugins\id3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Plugins\id3\types.c">
+      <Filter>Runtime\Plugins\id3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Plugins\id3\utils.c">
+      <Filter>Runtime\Plugins\id3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Plugins\json\Json.c">
+      <Filter>Runtime\Plugins\json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Plugins\json\lua_cjson.c">
+      <Filter>Runtime\Plugins\json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Plugins\json\strbuf.c">
+      <Filter>Runtime\Plugins\json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Plugins\json\fpconv.c">
+      <Filter>Runtime\Plugins\json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Plugins\md5\md5lib.c">
+      <Filter>Runtime\Plugins\md5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Plugins\md5\md5.c">
+      <Filter>Runtime\Plugins\md5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Plugins\xml\luaxml.c">
+      <Filter>Runtime\Plugins\xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Plugins\zip\lua_zip.c">
+      <Filter>Runtime\Plugins\luazip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\LuaEngine\LuaEngine.cpp">
+      <Filter>Runtime\LuaEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Plugins\libqrencode\qrencode.c">
+      <Filter>Runtime\Plugins\libqrencode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Plugins\libqrencode\qrinput.c">
+      <Filter>Runtime\Plugins\libqrencode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Plugins\libqrencode\qrspec.c">
+      <Filter>Runtime\Plugins\libqrencode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Plugins\libqrencode\quirc.c">
+      <Filter>Runtime\Plugins\libqrencode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Plugins\libqrencode\rscode.c">
+      <Filter>Runtime\Plugins\libqrencode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Plugins\libqrencode\split.c">
+      <Filter>Runtime\Plugins\libqrencode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Plugins\libqrencode\version_db.c">
+      <Filter>Runtime\Plugins\libqrencode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Plugins\libqrencode\bitstream.c">
+      <Filter>Runtime\Plugins\libqrencode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Plugins\libqrencode\decode.c">
+      <Filter>Runtime\Plugins\libqrencode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Plugins\libqrencode\identify.c">
+      <Filter>Runtime\Plugins\libqrencode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Plugins\libqrencode\mask.c">
+      <Filter>Runtime\Plugins\libqrencode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\String\FixedString.cpp">
+      <Filter>Runtime\String</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Plugins\base64.cpp">
+      <Filter>Runtime\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Plugins\lbase64.cpp">
+      <Filter>Runtime\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Utils\Timer.cpp">
+      <Filter>Runtime\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\NetWork\SocketUtils.cpp">
+      <Filter>Runtime\NetWork</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Graphics\ImageUtils.cpp">
+      <Filter>Runtime\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Serializer\Vector.serializer.cpp">
+      <Filter>Runtime\Serializer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Serializer\WindowsPlayer.serializer.cpp">
+      <Filter>Runtime\Serializer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Serializer\Animation.serializer.cpp">
+      <Filter>Runtime\Serializer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Serializer\Assets.serializer.cpp">
+      <Filter>Runtime\Serializer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Serializer\Audio.serializer.cpp">
+      <Filter>Runtime\Serializer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Serializer\Avatar.serializer.cpp">
+      <Filter>Runtime\Serializer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Serializer\Camera.serializer.cpp">
+      <Filter>Runtime\Serializer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Serializer\Color.serializer.cpp">
+      <Filter>Runtime\Serializer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Serializer\GameObject.serializer.cpp">
+      <Filter>Runtime\Serializer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Serializer\GLSL.serializer.cpp">
+      <Filter>Runtime\Serializer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Serializer\ImageSprite.serializer.cpp">
+      <Filter>Runtime\Serializer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Serializer\Label.serializer.cpp">
+      <Filter>Runtime\Serializer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Serializer\Material.serializer.cpp">
+      <Filter>Runtime\Serializer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Serializer\Mesh.serializer.cpp">
+      <Filter>Runtime\Serializer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Serializer\Particle.serializer.cpp">
+      <Filter>Runtime\Serializer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Serializer\Physics.serializer.cpp">
+      <Filter>Runtime\Serializer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Serializer\TextureAtlas.serializer.cpp">
+      <Filter>Runtime\Serializer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Serializer\TextureInfo.serializer.cpp">
+      <Filter>Runtime\Serializer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\IO\AudioResource.cpp">
+      <Filter>Runtime\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\IO\ImageResource.cpp">
+      <Filter>Runtime\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\IO\ResourceManager.cpp">
+      <Filter>Runtime\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\IO\AliceResource.cpp">
+      <Filter>Runtime\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\IO\AndroidAssetReader.cpp">
+      <Filter>Runtime\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\IO\TextureResource.cpp">
+      <Filter>Runtime\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Math\AliceFloat.cpp">
+      <Filter>Runtime\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Render\GL20\TextureCube.cpp">
+      <Filter>Runtime\Render\GL20</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Render\GL20\TextureUnit.cpp">
+      <Filter>Runtime\Render\GL20</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Render\GL20\VBO.cpp">
+      <Filter>Runtime\Render\GL20</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Render\GL20\BufferObject.cpp">
+      <Filter>Runtime\Render\GL20</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Render\GL20\EBO.cpp">
+      <Filter>Runtime\Render\GL20</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Render\GL20\FBO.cpp">
+      <Filter>Runtime\Render\GL20</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Render\GL20\GLSL.cpp">
+      <Filter>Runtime\Render\GL20</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Render\GL20\RBO.cpp">
+      <Filter>Runtime\Render\GL20</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Render\GL20\Texture2D.cpp">
+      <Filter>Runtime\Render\GL20</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Render\VertexData.cpp">
+      <Filter>Runtime\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Render\Attribute.cpp">
+      <Filter>Runtime\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Render\RenderState.cpp">
+      <Filter>Runtime\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Render\MaterialProperty.cpp">
+      <Filter>Runtime\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Render\RenderMisc.cpp">
+      <Filter>Runtime\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Math\AliceMatrix4x4.cpp">
+      <Filter>Runtime\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Math\Color.cpp">
+      <Filter>Runtime\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Math\ColorHSB.cpp">
+      <Filter>Runtime\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Math\Matrix3x3.cpp">
+      <Filter>Runtime\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Math\Quaternion.cpp">
+      <Filter>Runtime\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Math\Vector2.cpp">
+      <Filter>Runtime\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Math\Vector3.cpp">
+      <Filter>Runtime\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Math\Vector4.cpp">
+      <Filter>Runtime\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\IO\ShaderResource.cpp">
+      <Filter>Runtime\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Geometry\AABB.cpp">
+      <Filter>Runtime\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Geometry\Bezier.cpp">
+      <Filter>Runtime\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Geometry\CubicBezier.cpp">
+      <Filter>Runtime\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Geometry\Curve.cpp">
+      <Filter>Runtime\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Geometry\Ray.cpp">
+      <Filter>Runtime\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Geometry\Sphere.cpp">
+      <Filter>Runtime\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Geometry\Intersection.cpp">
+      <Filter>Runtime\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Base\ScriptObject.cpp">
+      <Filter>Runtime\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Base\Component.cpp">
+      <Filter>Runtime\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\LuaEngine\LuaCallback.cpp">
+      <Filter>Runtime\LuaEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Scene\GameObject.cpp">
+      <Filter>Runtime\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Scene\GameObjectPhysicsComponent.cpp">
+      <Filter>Runtime\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Scene\GameObjectRenderComponent.cpp">
+      <Filter>Runtime\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Scene\GameObjectScriptComponent.cpp">
+      <Filter>Runtime\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Scene\EventDispatcher.cpp">
+      <Filter>Runtime\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Utils\TTree.cpp">
+      <Filter>Runtime\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Utils\TreeViewNode.cpp">
+      <Filter>Runtime\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Scene\RendererManager.cpp">
+      <Filter>Runtime\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Scene\TouchEvent.cpp">
+      <Filter>Runtime\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Base\Transform.cpp">
+      <Filter>Runtime\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Render\Camera.cpp">
+      <Filter>Runtime\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Audio\AudioDebugger.cpp">
+      <Filter>Runtime\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Audio\AudioDevice.cpp">
+      <Filter>Runtime\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Audio\AudioBuffer.cpp">
+      <Filter>Runtime\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Audio\AudioListener.cpp">
+      <Filter>Runtime\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Audio\AudioSource.cpp">
+      <Filter>Runtime\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\2D\FullScreenQuad.cpp">
+      <Filter>Runtime\2D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\2D\ImageSprite.cpp">
+      <Filter>Runtime\2D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\2D\ImageSprite9.cpp">
+      <Filter>Runtime\2D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\2D\Component2D.cpp">
+      <Filter>Runtime\2D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Render\Material.cpp">
+      <Filter>Runtime\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Render\Light\Light.cpp">
+      <Filter>Runtime\Render\Light</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Render\RenderPass.cpp">
+      <Filter>Runtime\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Render\Shader.cpp">
+      <Filter>Runtime\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Render\UniformUpdater.cpp">
+      <Filter>Runtime\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\3D\Mesh.cpp">
+      <Filter>Runtime\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Render\IndexBuffer.cpp">
+      <Filter>Runtime\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Builtin\3D\SkyBox.cpp">
+      <Filter>Runtime\Builtin\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Graphics\TextureRectangleNode.cpp">
+      <Filter>Runtime\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Font\DynamicFont.cpp">
+      <Filter>Runtime\Font</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Font\FontFace.cpp">
+      <Filter>Runtime\Font</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Font\CharInfo.cpp">
+      <Filter>Runtime\Font</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Graphics\DynamicTextureAtlas.cpp">
+      <Filter>Runtime\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\IO\FontResource.cpp">
+      <Filter>Runtime\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Render\DrawCall.cpp">
+      <Filter>Runtime\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Builtin\HardCodedShader.cpp">
+      <Filter>Runtime\Builtin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\2D\DisplayChar.cpp">
+      <Filter>Runtime\2D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\2D\Label.cpp">
+      <Filter>Runtime\2D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Animation\ColorAnimation.cpp">
+      <Filter>Runtime\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Animation\EventAnimation.cpp">
+      <Filter>Runtime\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Animation\RenderOrderAnimation.cpp">
+      <Filter>Runtime\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Animation\SpriteSequenceAnimation.cpp">
+      <Filter>Runtime\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Animation\TransformAnimation.cpp">
+      <Filter>Runtime\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Animation\TwoColorAnimation.cpp">
+      <Filter>Runtime\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Animation\Animation.cpp">
+      <Filter>Runtime\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Animation\SpineAvatar.cpp">
+      <Filter>Runtime\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Render\RenderOrder.cpp">
+      <Filter>Runtime\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Animation\Avatar.cpp">
+      <Filter>Runtime\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Animation\Baked3DAnimation.cpp">
+      <Filter>Runtime\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\3D\CustomComponent.cpp">
+      <Filter>Runtime\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\NetWork\WWW.cpp">
+      <Filter>Runtime\NetWork</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\NetWork\HttpCurl.cpp">
+      <Filter>Runtime\NetWork</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\NetWork\HttpWorker.cpp">
+      <Filter>Runtime\NetWork</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\NetWork\Socket.cpp">
+      <Filter>Runtime\NetWork</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\String\BinaryBuffer.cpp">
+      <Filter>Runtime\String</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Thread\MainThreadScheduler.cpp">
+      <Filter>Runtime\Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Thread\ScheduleUnit.cpp">
+      <Filter>Runtime\Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Thread\AliceThread.cpp">
+      <Filter>Runtime\Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Physics\Physics3DComponent.cpp">
+      <Filter>Runtime\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Physics\Physics3DCube.cpp">
+      <Filter>Runtime\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Physics\Physics3DHeightField.cpp">
+      <Filter>Runtime\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Physics\Physics3DSphere.cpp">
+      <Filter>Runtime\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Physics\Physics3DTriangleMesh.cpp">
+      <Filter>Runtime\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Physics\PhysicsComponent.cpp">
+      <Filter>Runtime\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Physics\PhysicsManager.cpp">
+      <Filter>Runtime\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Physics\Physics2DBox.cpp">
+      <Filter>Runtime\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Physics\Physics2DChain.cpp">
+      <Filter>Runtime\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Physics\Physics2DCircle.cpp">
+      <Filter>Runtime\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Physics\Physics2DComponent.cpp">
+      <Filter>Runtime\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Physics\Physics2DEdge.cpp">
+      <Filter>Runtime\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Physics\Physics3DCapsule.cpp">
+      <Filter>Runtime\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Graphics\QRCodeImage.cpp">
+      <Filter>Runtime\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Exported\ExportModules.cpp">
+      <Filter>Runtime\Exported</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Exported\Utils\ExportedString.cpp">
+      <Filter>Runtime\Exported\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Exported\Utils\ExportedTimer.cpp">
+      <Filter>Runtime\Exported\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Exported\Utils\ExportedBinaryBuffer.cpp">
+      <Filter>Runtime\Exported\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Exported\Component\ExportedCustomComponent.cpp">
+      <Filter>Runtime\Exported\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Exported\Component\ExportedImageSprite.cpp">
+      <Filter>Runtime\Exported\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Exported\Component\ExportedImageSprite9.cpp">
+      <Filter>Runtime\Exported\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Exported\Component\ExportedLabel.cpp">
+      <Filter>Runtime\Exported\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Exported\Component\ExportedAudioSource.cpp">
+      <Filter>Runtime\Exported\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Exported\Geometry\ExportedRay.cpp">
+      <Filter>Runtime\Exported\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Exported\Graphic\ExportedGraphic.cpp">
+      <Filter>Runtime\Exported\Graphic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Exported\Graphic\ExportedDynamicFont.cpp">
+      <Filter>Runtime\Exported\Graphic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Exported\IO\ExportedAudioResource.cpp">
+      <Filter>Runtime\Exported\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Exported\IO\ExportedDir.cpp">
+      <Filter>Runtime\Exported\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Exported\IO\ExportedFile.cpp">
+      <Filter>Runtime\Exported\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Exported\IO\ExportedImageResource.cpp">
+      <Filter>Runtime\Exported\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Exported\IO\ExportedAliceResource.cpp">
+      <Filter>Runtime\Exported\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Exported\LuaEngine\ExportedLuaEngine.cpp">
+      <Filter>Runtime\Exported\LuaEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Exported\Math\ExportedMatrix4x4.cpp">
+      <Filter>Runtime\Exported\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Exported\Math\ExportedMatrix3x3.cpp">
+      <Filter>Runtime\Exported\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Exported\NetWork\ExportedSocket.cpp">
+      <Filter>Runtime\Exported\NetWork</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Exported\NetWork\ExportedWWW.cpp">
+      <Filter>Runtime\Exported\NetWork</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Exported\NetWork\ExportedHttp.cpp">
+      <Filter>Runtime\Exported\NetWork</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Exported\Physics\ExportedPhysics2DCircle.cpp">
+      <Filter>Runtime\Exported\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Exported\Physics\ExportedPhysics2DComponent.cpp">
+      <Filter>Runtime\Exported\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Exported\Physics\ExportedPhysics2DEdge.cpp">
+      <Filter>Runtime\Exported\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Exported\Physics\ExportedPhysics3DCapsule.cpp">
+      <Filter>Runtime\Exported\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Exported\Physics\ExportedPhysics3DComponent.cpp">
+      <Filter>Runtime\Exported\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Exported\Physics\ExportedPhysics3DCube.cpp">
+      <Filter>Runtime\Exported\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Exported\Physics\ExportedPhysics3DHeightField.cpp">
+      <Filter>Runtime\Exported\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Exported\Physics\ExportedPhysics3DSphere.cpp">
+      <Filter>Runtime\Exported\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Exported\Physics\ExportedPhysics3DTriangleMesh.cpp">
+      <Filter>Runtime\Exported\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Exported\Physics\ExportedPhysics2DBox.cpp">
+      <Filter>Runtime\Exported\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Exported\Physics\ExportedPhysics2DChain.cpp">
+      <Filter>Runtime\Exported\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Exported\Render\ExportedRenderOrder.cpp">
+      <Filter>Runtime\Exported\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Exported\Render\ExportedRenderPass.cpp">
+      <Filter>Runtime\Exported\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Exported\Render\ExportedShader.cpp">
+      <Filter>Runtime\Exported\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Exported\Render\ExportedTexture2D.cpp">
+      <Filter>Runtime\Exported\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Exported\Render\ExportedTextureCube.cpp">
+      <Filter>Runtime\Exported\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Exported\Render\ExportedCamera.cpp">
+      <Filter>Runtime\Exported\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Exported\Render\ExportedLighting.cpp">
+      <Filter>Runtime\Exported\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Exported\Render\ExportedMaterial.cpp">
+      <Filter>Runtime\Exported\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Exported\Scene\ExportedGameObjectPhysicsComponent.cpp">
+      <Filter>Runtime\Exported\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Exported\Scene\ExportedGameObjectRenderComponent.cpp">
+      <Filter>Runtime\Exported\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Exported\Scene\ExportedGameObjectSerializer.cpp">
+      <Filter>Runtime\Exported\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Exported\Scene\ExportedScene.cpp">
+      <Filter>Runtime\Exported\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Exported\Scene\ExportedGameObject.cpp">
+      <Filter>Runtime\Exported\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Exported\System\ExportedDevice.cpp">
+      <Filter>Runtime\Exported\System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Exported\System\ExportedAsyncCommand.cpp">
+      <Filter>Runtime\Exported\System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Graphics\LuminaceImage.cpp">
+      <Filter>Runtime\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Device\iPhone.cpp">
+      <Filter>Runtime\Device</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Device\Mac.cpp">
+      <Filter>Runtime\Device</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Device\Win.cpp">
+      <Filter>Runtime\Device</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Device\Android.cpp">
+      <Filter>Runtime\Device</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Utils\SystemInfo.cpp">
+      <Filter>Runtime\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\3D\Terrain.cpp">
+      <Filter>Runtime\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\3D\TerrainTile.cpp">
+      <Filter>Runtime\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Profiler\Profiler.cpp">
+      <Filter>Runtime\Profiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Exported\Physics\ExportedPhysics3DConvexMesh.cpp">
+      <Filter>Runtime\Exported\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Physics\Physics3DConvexMesh.cpp">
+      <Filter>Runtime\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\2D\Sprite2D.cpp">
+      <Filter>Runtime\2D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Exported\2D\ExportedSprite2D.cpp">
+      <Filter>Runtime\Exported\2D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\2D\Sprite2D9.cpp">
+      <Filter>Runtime\2D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Exported\2D\ExportedSprite2D9.cpp">
+      <Filter>Runtime\Exported\2D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\2D\Canvas.cpp">
+      <Filter>Runtime\2D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Exported\2D\ExportedCanvas.cpp">
+      <Filter>Runtime\Exported\2D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\2D\ClipArea2D.cpp">
+      <Filter>Runtime\2D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Exported\2D\ExportedClipArea2D.cpp">
+      <Filter>Runtime\Exported\2D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\3D\MeshRenderer.cpp">
+      <Filter>Runtime\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Exported\3D\ExportedTerrain.cpp">
+      <Filter>Runtime\Exported\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Exported\3D\ExportedAvatar.cpp">
+      <Filter>Runtime\Exported\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Exported\3D\ExportedMesh.cpp">
+      <Filter>Runtime\Exported\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Exported\3D\ExportedMeshRenderer.cpp">
+      <Filter>Runtime\Exported\3D</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Runtime\Utils\LinkedList.h">
+      <Filter>Runtime\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\RuntimePrefix.h">
+      <Filter>Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Win32Common\WindowEventDispatcher.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Debugger\Log.h">
+      <Filter>Runtime\Debugger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Win32Common\BaseWindow.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Win32Common\SplitLine.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Win32Common\DoubleBufferedWindow.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Win32Common\RenderWindow.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Win32Common\RenderContext.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Render\AliceGL.h">
+      <Filter>Runtime\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Win32Common\MainWindow.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Allocator\DefaultAllocator.h">
+      <Filter>Runtime\Allocator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Allocator\MemoryLabel.h">
+      <Filter>Runtime\Allocator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Allocator\tlsf\tlsf.h">
+      <Filter>Runtime\Allocator\tlsf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Allocator\tlsf\tlsfbits.h">
+      <Filter>Runtime\Allocator\tlsf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\String\StringUtils.h">
+      <Filter>Runtime\String</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Win32Common\Utils\FolderSelecter.h">
+      <Filter>Common\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Win32Common\Control\Control.h">
+      <Filter>Common\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Win32Common\Control\TextControl\StaticText.h">
+      <Filter>Common\Control\TextControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Win32Common\Control\ImageControl\ImageControl.h">
+      <Filter>Common\Control\ImageControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Win32Common\Control\ImageControl\ScaledImage.h">
+      <Filter>Common\Control\ImageControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Win32Common\Control\ImageControl\SelectableImageControl.h">
+      <Filter>Common\Control\ImageControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Win32Common\Control\ButtonControl\ImageButton.h">
+      <Filter>Common\Control\ButtonControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\IO\AliceData.h">
+      <Filter>Runtime\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\IO\FileItem.h">
+      <Filter>Runtime\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\IO\FileSystem.h">
+      <Filter>Runtime\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="WinPlayerView.h">
+      <Filter>Entry</Filter>
+    </ClInclude>
+    <ClInclude Include="WinPlayerMainWindow.h">
+      <Filter>Entry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Android\AndroidRuntime.h">
+      <Filter>Runtime\Android</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Base\Object.h">
+      <Filter>Runtime\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Utils\SmartPtr.h">
+      <Filter>Runtime\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Base\AliceGUID.h">
+      <Filter>Runtime\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Scene\SceneManager.h">
+      <Filter>Runtime\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Debugger\Debugger.h">
+      <Filter>Runtime\Debugger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Plugins\al\alc.h">
+      <Filter>Runtime\Plugins\al</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Plugins\al\alext.h">
+      <Filter>Runtime\Plugins\al</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Plugins\al\efx.h">
+      <Filter>Runtime\Plugins\al</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Plugins\al\efx-creative.h">
+      <Filter>Runtime\Plugins\al</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Plugins\al\efx-presets.h">
+      <Filter>Runtime\Plugins\al</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Plugins\al\al.h">
+      <Filter>Runtime\Plugins\al</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Plugins\id3\frame.h">
+      <Filter>Runtime\Plugins\id3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Plugins\id3\header.h">
+      <Filter>Runtime\Plugins\id3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Plugins\id3\id3v2lib.h">
+      <Filter>Runtime\Plugins\id3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Plugins\id3\types.h">
+      <Filter>Runtime\Plugins\id3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Plugins\id3\utils.h">
+      <Filter>Runtime\Plugins\id3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Plugins\id3\constants.h">
+      <Filter>Runtime\Plugins\id3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Plugins\freeimage\FreeImage.h">
+      <Filter>Runtime\Plugins\freeimage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Plugins\json\fpconv.h">
+      <Filter>Runtime\Plugins\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Plugins\json\Json.h">
+      <Filter>Runtime\Plugins\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Plugins\json\strbuf.h">
+      <Filter>Runtime\Plugins\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Plugins\Lua\lua.hpp">
+      <Filter>Runtime\Plugins\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Plugins\md5\md5.h">
+      <Filter>Runtime\Plugins\md5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Plugins\mpg123\mpg123.h">
+      <Filter>Runtime\Plugins\mpg123</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Plugins\socket\luasocket.h">
+      <Filter>Runtime\Plugins\socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Plugins\socket\mime.h">
+      <Filter>Runtime\Plugins\socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\LuaEngine\LuaEngine.h">
+      <Filter>Runtime\LuaEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Plugins\libqrencode\mask.h">
+      <Filter>Runtime\Plugins\libqrencode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Plugins\libqrencode\qrencode.h">
+      <Filter>Runtime\Plugins\libqrencode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Plugins\libqrencode\qrinput.h">
+      <Filter>Runtime\Plugins\libqrencode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Plugins\libqrencode\qrspec.h">
+      <Filter>Runtime\Plugins\libqrencode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Plugins\libqrencode\quirc.h">
+      <Filter>Runtime\Plugins\libqrencode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Plugins\libqrencode\quirc_internal.h">
+      <Filter>Runtime\Plugins\libqrencode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Plugins\libqrencode\rscode.h">
+      <Filter>Runtime\Plugins\libqrencode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Plugins\libqrencode\split.h">
+      <Filter>Runtime\Plugins\libqrencode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Plugins\libqrencode\bitstream.h">
+      <Filter>Runtime\Plugins\libqrencode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\String\FixedString.h">
+      <Filter>Runtime\String</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Plugins\base64.h">
+      <Filter>Runtime\Plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Utils\Timer.h">
+      <Filter>Runtime\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\NetWork\SocketUtils.h">
+      <Filter>Runtime\NetWork</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Graphics\ImageUtils.h">
+      <Filter>Runtime\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Base\ClassID.h">
+      <Filter>Runtime\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Serializer\Animation.serializer.h">
+      <Filter>Runtime\Serializer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Serializer\Assets.serializer.h">
+      <Filter>Runtime\Serializer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Serializer\Audio.serializer.h">
+      <Filter>Runtime\Serializer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Serializer\Avatar.serializer.h">
+      <Filter>Runtime\Serializer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Serializer\Camera.serializer.h">
+      <Filter>Runtime\Serializer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Serializer\Color.serializer.h">
+      <Filter>Runtime\Serializer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Serializer\GameObject.serializer.h">
+      <Filter>Runtime\Serializer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Serializer\GLSL.serializer.h">
+      <Filter>Runtime\Serializer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Serializer\ImageSprite.serializer.h">
+      <Filter>Runtime\Serializer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Serializer\Label.serializer.h">
+      <Filter>Runtime\Serializer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Serializer\Material.serializer.h">
+      <Filter>Runtime\Serializer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Serializer\Mesh.serializer.h">
+      <Filter>Runtime\Serializer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Serializer\Particle.serializer.h">
+      <Filter>Runtime\Serializer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Serializer\Physics.serializer.h">
+      <Filter>Runtime\Serializer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Serializer\TextureAtlas.serializer.h">
+      <Filter>Runtime\Serializer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Serializer\TextureInfo.serializer.h">
+      <Filter>Runtime\Serializer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Serializer\Vector.serializer.h">
+      <Filter>Runtime\Serializer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Serializer\WindowsPlayer.serializer.h">
+      <Filter>Runtime\Serializer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\IO\AudioResource.h">
+      <Filter>Runtime\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\IO\ImageResource.h">
+      <Filter>Runtime\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\IO\ResourceManager.h">
+      <Filter>Runtime\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\IO\AliceResource.h">
+      <Filter>Runtime\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\IO\AliceResourceType.h">
+      <Filter>Runtime\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\IO\AndroidAssetReader.h">
+      <Filter>Runtime\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\IO\TextureResource.h">
+      <Filter>Runtime\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Math\AliceFloat.h">
+      <Filter>Runtime\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Render\GL20\Texture2D.h">
+      <Filter>Runtime\Render\GL20</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Render\GL20\TextureCube.h">
+      <Filter>Runtime\Render\GL20</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Render\GL20\TextureUnit.h">
+      <Filter>Runtime\Render\GL20</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Render\GL20\VBO.h">
+      <Filter>Runtime\Render\GL20</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Render\GL20\BufferObject.h">
+      <Filter>Runtime\Render\GL20</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Render\GL20\EBO.h">
+      <Filter>Runtime\Render\GL20</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Render\GL20\FBO.h">
+      <Filter>Runtime\Render\GL20</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Render\GL20\GLSL.h">
+      <Filter>Runtime\Render\GL20</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Render\GL20\RBO.h">
+      <Filter>Runtime\Render\GL20</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Render\GL20\ShaderProperties.h">
+      <Filter>Runtime\Render\GL20</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Render\VertexData.h">
+      <Filter>Runtime\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Render\Attribute.h">
+      <Filter>Runtime\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Render\RenderState.h">
+      <Filter>Runtime\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Render\MaterialProperty.h">
+      <Filter>Runtime\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Render\RenderMisc.h">
+      <Filter>Runtime\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Math\AliceMatrix4x4.h">
+      <Filter>Runtime\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Math\Color.h">
+      <Filter>Runtime\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Math\ColorHSB.h">
+      <Filter>Runtime\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Math\Matrix3x3.h">
+      <Filter>Runtime\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Math\Quaternion.h">
+      <Filter>Runtime\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Math\Rect.h">
+      <Filter>Runtime\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Math\Vector2.h">
+      <Filter>Runtime\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Math\Vector3.h">
+      <Filter>Runtime\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Math\Vector4.h">
+      <Filter>Runtime\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\IO\ShaderResource.h">
+      <Filter>Runtime\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Geometry\AABB.h">
+      <Filter>Runtime\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Geometry\Bezier.h">
+      <Filter>Runtime\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Geometry\CubicBezier.h">
+      <Filter>Runtime\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Geometry\Curve.h">
+      <Filter>Runtime\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Geometry\Geometry.h">
+      <Filter>Runtime\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Geometry\Plane.h">
+      <Filter>Runtime\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Geometry\Point3.h">
+      <Filter>Runtime\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Geometry\Ray.h">
+      <Filter>Runtime\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Geometry\Sphere.h">
+      <Filter>Runtime\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Geometry\Intersection.h">
+      <Filter>Runtime\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Base\ScriptObject.h">
+      <Filter>Runtime\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Base\Component.h">
+      <Filter>Runtime\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\LuaEngine\LuaCallback.h">
+      <Filter>Runtime\LuaEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Scene\EventDispatcher.h">
+      <Filter>Runtime\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Scene\GameObject.h">
+      <Filter>Runtime\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Utils\TreeViewNode.h">
+      <Filter>Runtime\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Utils\TTree.h">
+      <Filter>Runtime\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Scene\RendererManager.h">
+      <Filter>Runtime\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Scene\TouchEvent.h">
+      <Filter>Runtime\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Base\Transform.h">
+      <Filter>Runtime\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Render\Camera.h">
+      <Filter>Runtime\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Audio\AudioBuffer.h">
+      <Filter>Runtime\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Audio\AudioDebugger.h">
+      <Filter>Runtime\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Audio\AudioDevice.h">
+      <Filter>Runtime\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Audio\AudioListener.h">
+      <Filter>Runtime\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Audio\AudioSource.h">
+      <Filter>Runtime\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\2D\Component2D.h">
+      <Filter>Runtime\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\2D\FullScreenQuad.h">
+      <Filter>Runtime\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\2D\ImageSprite.h">
+      <Filter>Runtime\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\2D\ImageSprite9.h">
+      <Filter>Runtime\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Render\Material.h">
+      <Filter>Runtime\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Render\Light\Light.h">
+      <Filter>Runtime\Render\Light</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Render\RenderPass.h">
+      <Filter>Runtime\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Render\Shader.h">
+      <Filter>Runtime\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Render\UniformUpdater.h">
+      <Filter>Runtime\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\3D\Mesh.h">
+      <Filter>Runtime\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Render\IndexBuffer.h">
+      <Filter>Runtime\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Builtin\3D\SkyBox.h">
+      <Filter>Runtime\Builtin\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Graphics\TextureRectangleNode.h">
+      <Filter>Runtime\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Font\DynamicFont.h">
+      <Filter>Runtime\Font</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Font\FontFace.h">
+      <Filter>Runtime\Font</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Font\CharInfo.h">
+      <Filter>Runtime\Font</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Graphics\DynamicTextureAtlas.h">
+      <Filter>Runtime\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\IO\FontResource.h">
+      <Filter>Runtime\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Render\DrawCall.h">
+      <Filter>Runtime\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Builtin\HardCodedShader.h">
+      <Filter>Runtime\Builtin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\2D\DisplayChar.h">
+      <Filter>Runtime\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\2D\Label.h">
+      <Filter>Runtime\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Animation\ColorAnimation.h">
+      <Filter>Runtime\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Animation\EventAnimation.h">
+      <Filter>Runtime\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Animation\RenderOrderAnimation.h">
+      <Filter>Runtime\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Animation\SpriteSequenceAnimation.h">
+      <Filter>Runtime\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Animation\TransformAnimation.h">
+      <Filter>Runtime\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Animation\TwoColorAnimation.h">
+      <Filter>Runtime\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Animation\Animation.h">
+      <Filter>Runtime\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Animation\AnimationClipType.h">
+      <Filter>Runtime\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Animation\SpineAvatar.h">
+      <Filter>Runtime\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Render\RenderOrder.h">
+      <Filter>Runtime\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Animation\Avatar.h">
+      <Filter>Runtime\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Animation\Baked3DAnimation.h">
+      <Filter>Runtime\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\3D\CustomComponent.h">
+      <Filter>Runtime\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\NetWork\Socket.h">
+      <Filter>Runtime\NetWork</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\NetWork\WWW.h">
+      <Filter>Runtime\NetWork</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\NetWork\HttpCurl.h">
+      <Filter>Runtime\NetWork</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\NetWork\HttpWorker.h">
+      <Filter>Runtime\NetWork</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\String\BinaryBuffer.h">
+      <Filter>Runtime\String</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Thread\AliceThread.h">
+      <Filter>Runtime\Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Thread\MainThreadScheduler.h">
+      <Filter>Runtime\Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Thread\ScheduleUnit.h">
+      <Filter>Runtime\Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Physics\Physics3DCapsule.h">
+      <Filter>Runtime\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Physics\Physics3DComponent.h">
+      <Filter>Runtime\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Physics\Physics3DCube.h">
+      <Filter>Runtime\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Physics\Physics3DHeightField.h">
+      <Filter>Runtime\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Physics\Physics3DSphere.h">
+      <Filter>Runtime\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Physics\Physics3DTriangleMesh.h">
+      <Filter>Runtime\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Physics\PhysicsComponent.h">
+      <Filter>Runtime\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Physics\PhysicsManager.h">
+      <Filter>Runtime\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Physics\Physics2D.h">
+      <Filter>Runtime\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Physics\Physics2DBox.h">
+      <Filter>Runtime\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Physics\Physics2DChain.h">
+      <Filter>Runtime\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Physics\Physics2DCircle.h">
+      <Filter>Runtime\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Physics\Physics2DComponent.h">
+      <Filter>Runtime\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Physics\Physics2DEdge.h">
+      <Filter>Runtime\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Physics\Physics3D.h">
+      <Filter>Runtime\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Graphics\QRCodeImage.h">
+      <Filter>Runtime\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Exported\ExportModules.h">
+      <Filter>Runtime\Exported</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Exported\Utils\ExportedString.h">
+      <Filter>Runtime\Exported\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Exported\Utils\ExportedTimer.h">
+      <Filter>Runtime\Exported\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Exported\Utils\ExportedBinaryBuffer.h">
+      <Filter>Runtime\Exported\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Exported\Component\ExportedAudioSource.h">
+      <Filter>Runtime\Exported\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Exported\Component\ExportedCustomComponent.h">
+      <Filter>Runtime\Exported\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Exported\Component\ExportedImageSprite.h">
+      <Filter>Runtime\Exported\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Exported\Component\ExportedImageSprite9.h">
+      <Filter>Runtime\Exported\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Exported\Component\ExportedLabel.h">
+      <Filter>Runtime\Exported\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Exported\Geometry\ExportedRay.h">
+      <Filter>Runtime\Exported\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Exported\Graphic\ExportedGraphic.h">
+      <Filter>Runtime\Exported\Graphic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Exported\Graphic\ExportedDynamicFont.h">
+      <Filter>Runtime\Exported\Graphic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Exported\IO\ExportedAliceResource.h">
+      <Filter>Runtime\Exported\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Exported\IO\ExportedAudioResource.h">
+      <Filter>Runtime\Exported\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Exported\IO\ExportedDir.h">
+      <Filter>Runtime\Exported\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Exported\IO\ExportedFile.h">
+      <Filter>Runtime\Exported\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Exported\IO\ExportedImageResource.h">
+      <Filter>Runtime\Exported\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Exported\LuaEngine\ExportedLuaEngine.h">
+      <Filter>Runtime\Exported\LuaEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Exported\Math\ExportedMatrix3x3.h">
+      <Filter>Runtime\Exported\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Exported\Math\ExportedMatrix4x4.h">
+      <Filter>Runtime\Exported\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Exported\NetWork\ExportedHttp.h">
+      <Filter>Runtime\Exported\NetWork</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Exported\NetWork\ExportedSocket.h">
+      <Filter>Runtime\Exported\NetWork</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Exported\NetWork\ExportedWWW.h">
+      <Filter>Runtime\Exported\NetWork</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Exported\Physics\ExportedPhysics2DCircle.h">
+      <Filter>Runtime\Exported\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Exported\Physics\ExportedPhysics2DComponent.h">
+      <Filter>Runtime\Exported\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Exported\Physics\ExportedPhysics2DEdge.h">
+      <Filter>Runtime\Exported\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Exported\Physics\ExportedPhysics3DCapsule.h">
+      <Filter>Runtime\Exported\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Exported\Physics\ExportedPhysics3DComponent.h">
+      <Filter>Runtime\Exported\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Exported\Physics\ExportedPhysics3DCube.h">
+      <Filter>Runtime\Exported\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Exported\Physics\ExportedPhysics3DHeightField.h">
+      <Filter>Runtime\Exported\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Exported\Physics\ExportedPhysics3DSphere.h">
+      <Filter>Runtime\Exported\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Exported\Physics\ExportedPhysics3DTriangleMesh.h">
+      <Filter>Runtime\Exported\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Exported\Physics\ExportedPhysics2DBox.h">
+      <Filter>Runtime\Exported\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Exported\Physics\ExportedPhysics2DChain.h">
+      <Filter>Runtime\Exported\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Exported\Render\ExportedMaterial.h">
+      <Filter>Runtime\Exported\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Exported\Render\ExportedRenderOrder.h">
+      <Filter>Runtime\Exported\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Exported\Render\ExportedRenderPass.h">
+      <Filter>Runtime\Exported\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Exported\Render\ExportedShader.h">
+      <Filter>Runtime\Exported\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Exported\Render\ExportedTexture2D.h">
+      <Filter>Runtime\Exported\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Exported\Render\ExportedTextureCube.h">
+      <Filter>Runtime\Exported\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Exported\Render\ExportedCamera.h">
+      <Filter>Runtime\Exported\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Exported\Render\ExportedLighting.h">
+      <Filter>Runtime\Exported\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Exported\Scene\ExportedScene.h">
+      <Filter>Runtime\Exported\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Exported\Scene\ExportedGameObject.h">
+      <Filter>Runtime\Exported\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Exported\System\ExportedAsyncCommand.h">
+      <Filter>Runtime\Exported\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Exported\System\ExportedDevice.h">
+      <Filter>Runtime\Exported\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Graphics\LuminaceImage.h">
+      <Filter>Runtime\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Device\DeviceInfo.h">
+      <Filter>Runtime\Device</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Device\iOSAPIBridge.h">
+      <Filter>Runtime\Device</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Device\iPhone.h">
+      <Filter>Runtime\Device</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Device\Mac.h">
+      <Filter>Runtime\Device</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Device\Win.h">
+      <Filter>Runtime\Device</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Device\Android.h">
+      <Filter>Runtime\Device</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Utils\SystemInfo.h">
+      <Filter>Runtime\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\3D\Terrain.h">
+      <Filter>Runtime\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\3D\TerrainTile.h">
+      <Filter>Runtime\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Profiler\Profiler.h">
+      <Filter>Runtime\Profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Exported\Physics\ExportedPhysics3DConvexMesh.h">
+      <Filter>Runtime\Exported\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Physics\Physics3DConvexMesh.h">
+      <Filter>Runtime\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\2D\Sprite2D.h">
+      <Filter>Runtime\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Exported\2D\ExportedSprite2D.h">
+      <Filter>Runtime\Exported\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\2D\Sprite2D9.h">
+      <Filter>Runtime\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Exported\2D\ExportedSprite2D9.h">
+      <Filter>Runtime\Exported\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\2D\Canvas.h">
+      <Filter>Runtime\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Exported\2D\ExportedCanvas.h">
+      <Filter>Runtime\Exported\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\2D\ClipArea2D.h">
+      <Filter>Runtime\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Exported\2D\ExportedClipArea2D.h">
+      <Filter>Runtime\Exported\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\3D\MeshRenderer.h">
+      <Filter>Runtime\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Exported\3D\ExportedTerrain.h">
+      <Filter>Runtime\Exported\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Exported\3D\ExportedAvatar.h">
+      <Filter>Runtime\Exported\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Exported\3D\ExportedMesh.h">
+      <Filter>Runtime\Exported\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Exported\3D\ExportedMeshRenderer.h">
+      <Filter>Runtime\Exported\3D</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

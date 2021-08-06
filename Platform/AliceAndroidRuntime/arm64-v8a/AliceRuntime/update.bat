@@ -1,0 +1,1 @@
+copy libs\arm64-v8a\libAliceRuntime.so ..\..\..\AndroidPlayer\app\src\main\jnilibs\arm64-v8a\

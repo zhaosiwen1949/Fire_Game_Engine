@@ -1,0 +1,23 @@
+package Serializer;
+option optimize_for = LITE_RUNTIME;
+import "ImageSprite.proto";
+message Transform{
+	repeated float position=1;
+	repeated float rotation=2;
+	repeated float scale=3;
+	repeated float shear=4;
+	optional int32 type=5;
+}
+message GameObject{
+	optional string name=1;
+	optional uint32 layer=2;
+	optional bool enable=3;
+	optional Transform transform=4;
+	optional GameObject child=5;
+	optional GameObject left_sibling=6;
+	optional GameObject right_sibling=7;
+	optional bytes extra_data=8;
+	repeated string render_order=9;
+	optional ImageSprite imageSprite=10;
+	optional ImageSprite9 imagesprite9=11;
+}

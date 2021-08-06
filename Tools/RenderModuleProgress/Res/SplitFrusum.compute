@@ -1,0 +1,55 @@
+#version 430
+layout(local_size_x=1024)in;//32x32
+struct FrustumVolume{
+	vec4 CommonPlanes[4];//a,b,c,d
+	vec4 NearFarPlanes[32];
+};
+layout(std140,binding=0)buffer Frustum{
+	FrustumVolume SplitedFrustums[];
+}U_Frustum;
+uniform mat4 U_World_To_Clip;
+const uint sSplitCount=32;
+const uint sSplitZCount=16;
+vec4 ExtractPlane(int index,float distance) {
+	int x_index = index / 2;
+	vec4 M4=U_World_To_Clip[3];
+	vec4 MX=U_World_To_Clip[x_index];
+	float sign = 1.0;
+	if (index % 2 == 1) {
+		sign = -1.0;
+	}
+	float a=sign * MX[0] + M4[0] * distance;
+	float b=sign * MX[1] + M4[1] * distance;
+	float c=sign * MX[2] + M4[2] * distance;
+	float d=sign * MX[3] + M4[3] * distance;
+	float len=length(vec3(a,b,c));
+	a/=len;
+	b/=len;
+	c/=len;
+	d/=len;
+	return vec4(a,b,c,d);
+}
+void main(){
+	//32x32
+	uint frustum_index=gl_GlobalInvocationID.x;
+	uint u=frustum_index%sSplitCount;
+	uint v=frustum_index/sSplitCount;
+	float size=2.0/float(sSplitCount);
+	float left=-1.0+u*size;
+	float right=left+size;
+	float bottom=-1.0+v*size;
+	float top=bottom+size;
+
+	U_Frustum.SplitedFrustums[frustum_index].CommonPlanes[0]=ExtractPlane(0,-left);
+	U_Frustum.SplitedFrustums[frustum_index].CommonPlanes[1]=ExtractPlane(1,right);
+	U_Frustum.SplitedFrustums[frustum_index].CommonPlanes[2]=ExtractPlane(2,-bottom);
+	U_Frustum.SplitedFrustums[frustum_index].CommonPlanes[3]=ExtractPlane(3,top);
+
+	float z_step=2.0/float(sSplitZCount);
+	for(int i=0;i<16;++i){
+		float z_start=z_step*i;
+		float z_end=z_start+z_step;
+		U_Frustum.SplitedFrustums[frustum_index].NearFarPlanes[i*2]=ExtractPlane(4,1.0-z_start);
+		U_Frustum.SplitedFrustums[frustum_index].NearFarPlanes[i*2+1]=ExtractPlane(5,-(1.0-z_end));
+	}
+}

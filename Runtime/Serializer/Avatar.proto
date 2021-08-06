@@ -1,0 +1,54 @@
+package Serializer;
+option optimize_for = LITE_RUNTIME;
+import "Vector.proto";
+import "Mesh.proto";
+import "GameObject.proto";
+import "Animation.proto";
+message Bone{
+	optional string name=1;
+	repeated float translate=2;
+	repeated float rotation=3;
+	repeated float scale=4;
+	repeated float shear=5;
+}
+message Slot{
+	optional string name=1;
+	repeated float color=2;
+	repeated float dark=3;
+	optional string attachment=4;
+	optional int32 blend_func_src=5;
+	optional int32 blend_func_dst=6;
+}
+message RegionAttachment{
+	repeated float translate=1;
+	repeated float rotation=2;
+	repeated float scale=3;
+	repeated float size=4;
+	repeated float color=5;
+}
+message Attachment{
+	optional int32 type=1;
+	optional string name=2;
+	optional bytes data=3;
+}
+message SlotAvailableAttachmentsInfo{
+	optional string name=1;
+	repeated Attachment available_attachments=2;
+}
+message Skin{
+	optional string name=1;
+	repeated SlotAvailableAttachmentsInfo slot_available_attachments_info=2;
+}
+message SpineAvatar{
+	optional string name=1;
+	optional GameObject setup_pose=2;
+	repeated Bone bones=3;
+	repeated Slot slots=4;
+	repeated Skin skins=5;
+	repeated Animation animations=6;
+}
+message Avatar3D{
+	optional string name=1;
+	repeated Mesh t_pose=2;
+	repeated Matrix4fB t_pose_invert_matrix=3;
+}

@@ -1,0 +1,33 @@
+package Serializer;
+option optimize_for = LITE_RUNTIME;
+import "TextureInfo.proto";
+message ImageTile{
+	optional string name=1;
+	optional int32 x=2;
+	optional int32 y=3;
+	optional int32 width=4;
+	optional int32 height=5;
+	optional string textureAtlasPath=6;
+	optional float texcoordLeft=7;
+	optional float texcoordTop=8;
+	optional float texcoordRight=9;
+	optional float texcoordBottom=10;
+	optional bool rotated=11;
+}
+message TextureAtlas{
+	optional string path=1;
+	repeated ImageTile imageTiles=2;
+	optional TextureInfo textureInfo=3;
+	optional bool importedAtlas=4;
+	optional string guid=5;
+}
+message AtlasInfo{
+	optional string path=1;
+	repeated ImageTile imageTiles=2;
+	optional bool importedAtlas=3;
+	optional string guid=4;
+	optional fixed64 last_write_time=5;
+	optional ImageCompressInfo ios=6;
+	optional ImageCompressInfo android=7;
+	optional ImageCompressInfo windows=8;
+}

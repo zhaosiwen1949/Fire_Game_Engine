@@ -1,0 +1,9 @@
+package Serializer;
+option optimize_for = LITE_RUNTIME;
+message Mesh{
+	optional int32 vertexCount=1;
+	optional bytes vertexBuffer=2;
+	optional int32 indexCount=3;
+	optional bytes indexBuffer=4;
+	optional string name=5;
+}

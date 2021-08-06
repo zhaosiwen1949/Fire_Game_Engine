@@ -1,0 +1,105 @@
+package Serializer;
+option optimize_for = LITE_RUNTIME;
+import "Vector.proto";
+import "Color.proto";
+//runtime file format
+message Curve{
+	repeated Vector4f KeyPoints=1;
+}
+//p0(0,0) p1 p2 p3(1,1)
+message CubicBezier{
+	optional Vector2f p1=1;
+	optional Vector2f p2=2;
+}
+message RotateAnimationKeyFrame{
+	optional float time=1;
+	optional int32 interpolation_type=2;
+	repeated float external_args=3;
+	repeated float rotation=4;
+}
+message RotateAnimationClip{
+	repeated RotateAnimationKeyFrame key_frames=1;
+}
+message TranslateAnimationKeyFrame{
+	optional float time=1;
+	optional int32 interpolation_type=2;
+	repeated float external_args=3;
+	repeated float translation=4;
+}
+message TranslateAnimationClip{
+	repeated TranslateAnimationKeyFrame key_frames=1;
+}
+message ScaleAnimationKeyFrame{
+	optional float time=1;
+	optional int32 interpolation_type=2;
+	repeated float external_args=3;
+	repeated float scale=4;
+}
+message ScaleAnimationClip{
+	repeated ScaleAnimationKeyFrame key_frames=1;
+}
+message ShearAnimationKeyFrame{
+	optional float time=1;
+	optional int32 interpolation_type=2;
+	repeated float external_args=3;
+	repeated float shear=4;
+}
+message ShearAnimationClip{
+	repeated ShearAnimationKeyFrame key_frames=1;
+}
+message SpriteSequenceAnimationKeyFrame{
+	optional float time=1;
+	optional string image_name=2;
+}
+message SpriteSequenceAnimationClip{
+	repeated SpriteSequenceAnimationKeyFrame key_frames=1;
+}
+message ColorAnimationKeyFrame{
+	optional float time=1;
+	optional int32 interpolation_type=2;
+	repeated float external_args=3;
+	repeated float color=4;
+}
+message ColorAnimationClip{
+	repeated ColorAnimationKeyFrame key_frames=1;
+}
+message TwoColorAnimationKeyFrame{
+	optional float time=1;
+	optional int32 interpolation_type=2;
+	repeated float external_args=3;
+	repeated float light=4;
+	repeated float dark=5;
+}
+message TwoColorAnimationClip{
+	repeated TwoColorAnimationKeyFrame key_frames=1;
+}
+message DrawOrderAnimationKeyFrame{
+	optional float time=1;
+	repeated string draw_order=2;
+}
+message DrawOrderAnimationClip{
+	repeated DrawOrderAnimationKeyFrame key_frames=1;
+}
+message AnimationClip{
+	optional int32 type=1;
+	optional string target=2;
+	optional int32 target_component=3;
+	optional bytes animation_clip_data=4;
+}
+message Animation{
+	optional string name=1;
+	optional float duration=2;
+	repeated AnimationClip animation_clips=3;
+}
+message BakedMeshData{
+	optional bytes vertex_buffer=1;
+	optional bytes offset_matrix=2;
+}
+message BakedKeyFrame{
+	repeated BakedMeshData mesh_datas=1;
+}
+message BakedAnimationData{
+	optional string name=1;
+	repeated BakedKeyFrame key_frames=2;
+    optional int32 frame_rate=3;
+}

@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Res">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Renderer">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Renderer\GL20">
+      <UniqueIdentifier>{f15d12f8-1ffa-4551-85ce-e73a58dd6e3f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="scene.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="utils.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="shader.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="framebufferobject.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="VertexData.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="GL20\VBO.cpp">
+      <Filter>Renderer\GL20</Filter>
+    </ClCompile>
+    <ClCompile Include="GL20\IBO.cpp">
+      <Filter>Renderer\GL20</Filter>
+    </ClCompile>
+    <ClCompile Include="GL20\BufferObject.cpp">
+      <Filter>Renderer\GL20</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawCall.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderState.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Material.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Attribute.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="UniformUpdater.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="MaterialProperty.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderPass.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Light.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="model.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="scene.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="utils.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="shader.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="framebufferobject.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="AliceGL.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="VertexData.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="GL20\VBO.h">
+      <Filter>Renderer\GL20</Filter>
+    </ClInclude>
+    <ClInclude Include="GL20\IBO.h">
+      <Filter>Renderer\GL20</Filter>
+    </ClInclude>
+    <ClInclude Include="GL20\BufferObject.h">
+      <Filter>Renderer\GL20</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawCall.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkedList.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderState.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Material.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Attribute.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="UniformUpdater.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="MaterialProperty.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderPass.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Light.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="model.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Res\DefferedNormal.vs">
+      <Filter>Res</Filter>
+    </None>
+    <None Include="Res\DefferedPosition.fs">
+      <Filter>Res</Filter>
+    </None>
+    <None Include="Res\DefferedPosition.vs">
+      <Filter>Res</Filter>
+    </None>
+    <None Include="Res\fullscreenquad.vs">
+      <Filter>Res</Filter>
+    </None>
+    <None Include="Res\texture.fs">
+      <Filter>Res</Filter>
+    </None>
+    <None Include="Res\DefferedColor.fs">
+      <Filter>Res</Filter>
+    </None>
+    <None Include="Res\DefferedColor.vs">
+      <Filter>Res</Filter>
+    </None>
+    <None Include="Res\DefferedNormal.fs">
+      <Filter>Res</Filter>
+    </None>
+  </ItemGroup>
+</Project>

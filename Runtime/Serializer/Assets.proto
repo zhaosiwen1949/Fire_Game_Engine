@@ -1,0 +1,10 @@
+package Serializer;
+option optimize_for = LITE_RUNTIME;
+message RuntimeAsset{
+	//specify asset type
+	required int32 type=1;
+	//raw data for asset
+	required string guid=2;
+	//raw data for asset
+	required bytes rawdata=3;
+}

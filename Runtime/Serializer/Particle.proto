@@ -1,0 +1,63 @@
+package Serializer;
+option optimize_for = LITE_RUNTIME;
+import"Color.proto";
+import"Vector.proto";
+
+message OldParticleEmitter
+{
+	optional int32 max_particle_count=1;
+	optional float max_delay_time=2;
+	optional float max_life_time=3;
+	optional Color4B min_start_color=4;
+	optional Color4B max_start_color=5;
+	optional Vector4f min_emit_range=6;
+	optional Vector4f max_emit_range=7;
+	optional Vector4f min_speed=8;
+	optional Vector4f max_speed=9;
+}
+
+message BoxParticleEmitter
+{
+	optional int32 min_particle_count_per_second=1;
+	optional int32 max_particle_count_per_second=2;
+	optional float min_delay_time=3;
+	optional float min_life_time=4;
+	optional float max_delay_time=5;
+	optional float max_life_time=6;
+	optional Color4B min_start_color=7;
+	optional Color4B max_start_color=8;
+	optional Vector4f min_emit_range=9;
+	optional Vector4f max_emit_range=10;
+	optional Vector4f min_speed=11;
+	optional Vector4f max_speed=12;
+	optional bool use_gravity=13;
+	optional Color4B min_end_color=14;
+	optional Color4B max_end_color=15;
+	optional string image_guid=16;
+}
+
+message DiscParticleEmitter
+{
+	optional int32 min_particle_count_per_second=1;
+	optional int32 max_particle_count_per_second=2;
+	optional float min_delay_time=3;
+	optional float min_life_time=4;
+	optional float max_delay_time=5;
+	optional float max_life_time=6;
+	optional Color4B min_color=7;
+	optional Color4B max_color=8;
+	optional Vector4f min_emit_range=9;
+	optional Vector4f max_emit_range=10;
+	optional Vector4f min_speed=11;
+	optional Vector4f max_speed=12;
+	optional bool use_gravity=13;
+}
+
+message Particle
+{
+	optional int32 emitter_type=1;
+	optional BoxParticleEmitter box_emitter=2;
+	optional DiscParticleEmitter disc_emitter=3;
+	optional int32 version=4;
+	optional OldParticleEmitter old_emitter=5;
+}
